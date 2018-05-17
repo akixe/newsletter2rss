@@ -1,0 +1,119 @@
+{
+    "title": "",
+    "softTitle": "",
+    "date": null,
+    "author": [],
+    "publisher": null,
+    "copyright": null,
+    "lang": null,
+    "tags": [],
+    "image": null,
+    "videos": [],
+    "links": [
+        {
+            "text": "R=\r\nead on the Web",
+            "href": "3D\"https://no="
+        },
+        {
+            "text": "What You Can Expect From Node.js 10",
+            "href": "3D\"https://nodeweekly.com/link/45826/588126efe5\""
+        },
+        {
+            "text": "Hyper 2: A Terminal Built on Web Technologies",
+            "href": "3D\"https://nodeweekly.com/link/45827/588126efe5\""
+        },
+        {
+            "text": "GitHub repo.",
+            "href": "3D\"ht="
+        },
+        {
+            "text": "<img 0=\"\" src=\"3D&quot;https://copm.s3.amazonaws.com/2ff44832.png&quot;\" widt=\"h=3D&quot;160&quot;\" height=\"3D&quot;123&quot;\" style=\"3D&quot;padding-top:\" 12px;=\"\" border:=\"\" none;=\"\" paddin=\"g-left:\" -ms-interpolation-mode:=\"\" bicubic;=\"\" outline:=\"\" height:=\"\" auto;=\"text-decoration:\" max-width:=\"\" 100%;\"=\"\" align=\"3D&quot;right&quot;\" alt=\"3D&quot;&quot;\" class=\"3D=\" \"som\"=\"\">",
+            "href": "3D\"https://nodeweekly.com/link/45829/588126efe5="
+        },
+        {
+            "text": "The New Generation of Project Management Tools Is Here and It=E2=\r\n=80=99s Visual",
+            "href": "3D\"https://nodeweekly.com/link/45829/588126efe5\""
+        },
+        {
+            "text": "Yarn vs npm: The State of Node Package Managers",
+            "href": "3D\"https://nodeweekly.com/link/45830/588126efe5\""
+        },
+        {
+            "text": "Understanding the Buffer Deprecation in Node.js 10",
+            "href": "3D\"https://nodeweekly.com/link/45831/588126efe5\""
+        },
+        {
+            "text": "npm v5.10.0 Released",
+            "href": "3D\"https://nodeweekly.com/link/45832/588126efe5\""
+        },
+        {
+            "text": "v6.0.0-next.1",
+            "href": "3D\"https://nodeweekly.com/link/4583="
+        },
+        {
+            "text": "nod: A Node Module Generator/Boilerplate",
+            "href": "3D\"https://nodeweekly.com/link/45835/588126efe5\""
+        },
+        {
+            "text": "Consumer Driven Contract Testing with Node.j=\r\ns and Pact",
+            "href": "3D\"https://nodeweekly.com/link/="
+        },
+        {
+            "text": "Tickets for MongoDB World 2018 Are Now on Sale",
+            "href": "3D\"https://nodeweekly.com/link/45837/588126efe5\""
+        },
+        {
+            "text": "A Discussion on Dropping Node&apos;s 32-bit x86 Builds",
+            "href": "3D\"https://nodeweekly.com/link/45838/588126efe5\""
+        },
+        {
+            "text": "V8 Internals for JS Developers",
+            "href": "3D\"https://nodeweekly.com/link/="
+        },
+        {
+            "text": "Senior Software Engineer (NYC)",
+            "href": "3D\"https://nodeweekly.com/link/45840/588126efe5\""
+        },
+        {
+            "text": "Looking For Your Next Job Working With Node This Spring?",
+            "href": "3D\"https://nodeweekly.com/link/45841/588126efe5\""
+        },
+        {
+            "text": "An Advanced Node.js Project Structure Tutorial",
+            "href": "3D\"https://nodeweekly.com/link/45842/588126efe5\""
+        },
+        {
+            "text": "Adding Sparkle to Social Coding: An Empirical Study of Repository=\r\n Badges in the npm Ecosystem",
+            "href": "3D\"https://nodeweekly.com/link/45843/588126efe5\""
+        },
+        {
+            "text": "How=E2=80=99s Your Node.js Know-How? Find Out in 5 Minutes",
+            "href": "3D\"https://nodeweekly.com/link/45844/588126efe5\""
+        },
+        {
+            "text": "Building Your First Shopify App with Node.js=\r\n and Express",
+            "href": "3D\"https://nodeweekly.com/link/="
+        },
+        {
+            "text": "Create a YouTube-Style Recommendation Engine with Node &amp; Vue.=\r\njs",
+            "href": "3D\"https://nodeweekly.com/link/45846/588126efe5\""
+        },
+        {
+            "text": "Mailtrain: A Self-Hosted Newsletter Sending App",
+            "href": "3D\"https://nodeweekly.com/link/45847/588126efe5\""
+        },
+        {
+            "text": "VuePress: A Vue-Powered Static Site Generator",
+            "href": "3D\"https://nodeweekly.com/link/45848/588126efe5\""
+        },
+        {
+            "text": "Strapi v3@alpha.12: GraphQL, Rich Text Editor and a Redesigned Da=\r\nshboard",
+            "href": "3D\"https://nodeweekly.com/link/45849/588126efe5\""
+        },
+        {
+            "text": "jest-puppeteer: Run Your Tests using Jest and Puppeteer",
+            "href": "3D\"https://nodeweekly.com/link/45850/588126efe5\""
+        }
+    ],
+    "text": "=20=20\n\nWhat You Can Expect From Node.js 10 =E2=80=94 The firs=\r t release of Node 10 is due next Tuesday (April 24th) and will go LTS in Oc=\r tober, but what=E2=80=99s new? HTTP/2 support, organized coded errors, and =\r more.\n\n=20=20\n\nHyper 2: A Terminal Built on Web Technologies =E2=80=\r =94 Hyper takes a few steps forward with a much faster rendering engine, an=\r  online plugin/theme catalog, and improved hyperlink support. GitHub repo.\n\nThe New Generation of Project Management Tools Is Here and It=E2=\n\n=80=99s Visual =E2=80=94 monday.com is a visual tool your team w=\r ill actually enjoy using. It makes it fun and easy for everyone to collabor=\r ate, focus on what's important, and get more done. A project management too=\r l that=E2=80=99ll help you and your team collaborate and achieve more toget=\r her.\n\n=20=20\n\nYarn vs npm: The State of Node Package Managers =E2=80=\r =94 An update of a previously popular post looking at the current state of =\r Node package managers and when you might pick a certain one.\n\n=20=20\n\nUnderstanding the Buffer Deprecation in Node.js 10 =E2=\r =80=94 Shipping in Node.js 10 is a relatively uncontroversial fix for an ex=\r tremely controversial issue in Node - use of the Buffer constr=\r uctor.\n\n=20=20\n\nnpm v5.10.0 Released =E2=80=94 There=E2=80=99s a new =\n\nnpm cit command which is essentially npm ci && npm=\n\nt. There=E2=80=99s also v6.0.0-next.1 which adds support for managin=\n\ng npm webhooks for the most cutting edge of npm users.\n\n=20=20\n\nnod: A Node Module Generator/Boilerplate =E2=80=94 Run=\r  nod, answer some questions, and get a module generated comple=\r te with Babel, Jest, and Flow support, documentation, and more.\n\n=20=20\n\n=20=20\n\nTickets for MongoDB World 2018 Are Now on Sale\n\n=20=20\n\nA Discussion on Dropping Node's 32-bit x86 Builds =E2=\r =80=94 It seems hardly anyone is using the 32 bit builds of Node, but commu=\r nity feedback is appreciated.\n\n=20=20\n\n=E2=96=B6=C2=A0=C2=A0V8 Internals for JS Developers =\r =E2=80=94 Note: Audio has a buzz (isn=E2=80=99t too bad).\n\n=20=20\n\nSenior Software Engineer (NYC) =E2=80=94 Hospitality/t=\r ech platform focused on building help into our homes. React, React Native, =\r Node, TypeScript, PostgreSQL.\n\n=20=20\n\nLooking For Your Next Job Working With Node This Spring? =E2=80=94 Try Underdog.io, where hundreds of the best tech companies use=\r  Underdog.io to meet top engineers. Open in NY, SF Bay Area, and for remote=\r .\n\n=20=20\n\nAdding Sparkle to Social Coding: An Empirical Study of Repository=\n\nBadges in the npm Ecosystem =E2=80=94 =E2=80=9CDisplaying s=\r uch badges correlates with best practices, but the effects do not always pe=\r rsist.=E2=80=9D\n\n=20=20\n\nHow=E2=80=99s Your Node.js Know-How? Find Out in 5 Minutes =E2=80=94 Don=E2=80=99t guess where your skills stand=E2=80=94know. Us=\r e Pluralsight IQ to measure your skills in 5 minutes or less.\n\n=20=20\n\n=E2=96=B6=C2=A0=C2=A0Building Your First Shopify App with Node.js=\n\nand Express\n\n=20=20\n\nStrapi v3@alpha.12: GraphQL, Rich Text Editor and a Redesigned Da=\n\nshboard =E2=80=94 Strapi is a Node-based REST API framework with=\r  an extensible admin panel.\n\n=20=20\n\njest-puppeteer: Run Your Tests using Jest and Puppeteer"
+}

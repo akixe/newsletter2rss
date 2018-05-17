@@ -1,0 +1,16 @@
+{
+  "name": "newsletter2rss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "anchorme": "^1.1.2",
+    "get-urls": "^7.2.0",
+    "unfluff": "^3.0.1"
+  }
+}
