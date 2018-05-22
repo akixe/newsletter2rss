@@ -1,0 +1,1172 @@
+Delivered-To: akixe.otegi@zoho.com
+Authentication-Results: mx.zohomail.com;
+	dkim=pass;
+	spf=pass (zoho.com: domain of _spf.google.com designates 209.85.215.48 as permitted sender)  smtp.mailfrom=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com;
+	dmarc=pass(p=none dis=none)  header.from=mailer.infoq.com
+Received: from mail-lf0-f48.google.com (mail-lf0-f48.google.com [209.85.215.48]) by mx.zohomail.com
+	with SMTPS id 1526630583512166.45518063780287; Fri, 18 May 2018 01:03:03 -0700 (PDT)
+Received: by mail-lf0-f48.google.com with SMTP id t129-v6so12607616lff.3
+        for <akixe.otegi@zoho.com>; Fri, 18 May 2018 01:03:02 -0700 (PDT)
+Received: by 2002:a2e:8081:0:0:0:0:0 with SMTP id i1-v6csp871026ljg;
+        Fri, 18 May 2018 01:02:59 -0700 (PDT)
+Return-Path: <akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com>
+Return-Path: <bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com>
+Received: from o2.mktg.mailer.infoq.com (o2.mktg.mailer.infoq.com. [167.89.107.173])
+        by mx.google.com with ESMTPS id d16-v6si6609069qkb.67.2018.05.18.01.02.58
+        for <akixe.otegi@gmail.com>
+        (version=TLS1_2 cipherìDHE-RSA-AES128-GCM-SHA256 bits8/128);
+        Fri, 18 May 2018 01:02:59 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d100.net; s 161025;
+        h=x-gm-message-state:delivered-to:dkim-signature:dkim-signature:date
+         :from:mime-version:reply-to:subject:to:message-id:list-unsubscribe;
+        bh¢gRCfQ+itUbRzDR5KKQ1D3Re25SADpj1g5UXrOdQvI=;
+        b=g4HMNwoJOWgVXev4AR/G7tr+c//jV4eCZRKL/XWjPV+UHoLq7yOORe9u5rF/KAHNj2
+         e9isntHfGluRoQpoF0hq/pd2NxivovUn0o0LtiUYy2oewhLiA9VVmB8LtjDYpiGRz2sk
+         OIImiy7n+W+8tQFbgREnQr1crAwfdjvqAqg5lB1+Tve39nJ7wmKaIK99C/3k9Ijlh1QF
+         OdINJecyDuFd0FEX2cNbfIffbw9gzPPhWKl0knYAiRfq2Nc6Qlt7xXDW35yCYWiCttiC
+         lDuRUUh/pbhvZ8KZXjE8SoVYj/kpQh83uPUlg2q0u1PtVG7wui4SPpp8ka7ezE/1pSII
+         xt0Q=X-Gm-Message-State: ALKqPwcmABAnIPsD9zIkxqAH4KMCu5b7XWFy4ICJETlXku+lus5etyQW
+	p2klXfTGCB2CQkBHZnn3OTnB8s8hD4M5976Ybu37f5SB8OTOv5UX-Received: by 2002:a19:9555:: with SMTP id x82-v6mr19270015lfd.132.1526630581013;
+        Fri, 18 May 2018 01:03:01 -0700 (PDT)
+X-Forwarded-To: akixe.otegi@zoho.com
+X-Forwarded-For: akixe.otegi@gmail.com akixe.otegi@zoho.com
+X-Google-Smtp-Source: AB8JxZqRblnu+IfOMVjux2A1jTAmBp2E81TxC99XlgWm00IO2DWGVAOkLtGZbRQgKo36dU/Af2CR
+X-Received: by 2002:ac8:859:: with SMTP id x25-v6mr8696715qth.48.1526630579179;
+        Fri, 18 May 2018 01:02:59 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t26630579; cv=none;
+        d=google.com; s=arc-20160816;
+        b=q+rnprT2LBz7YbzD2CNkyy36ws4Vj+oUBQ8n+2OTl/Ag1PdBGWs7N5ASbaL98q25SX
+         PHqeCfCsJjuoR2Y/08gg25tbiale9njE8OSs/ffiPKfZPiWVit7d14/DP6p3oGhsxvWs
+         jcDvBWGDVY9/fNwpvKLOTW0uQCmCraJw3HG1NdVKLwr3+7lx4ta8CNCGxuYv3Dec1Aet
+         sI99cwXRnrrCQKuIK4edYZ8928juq9T4nEGhUd4NG0HrlRDuoiq8DEQvgIJacWxL8SU/
+         4D2O7mkO9A9l9NQ46YVyuNgsOb/LzJykm3ehMNKrqqFn+BTpkybyU5Zvs7OvvHZwvZoN
+         4xdw=ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:message-id:to:subject:reply-to:mime-version:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh¢gRCfQ+itUbRzDR5KKQ1D3Re25SADpj1g5UXrOdQvI=;
+        b=zk5uJhd3dtSuQAnSCp8cnkm0EQRyUgzbAgQDTiCj625PAbNOclj5Bm6hsyeN6mitcQ
+         eB8dP2jQPXizN+rGLjlBtBs+Tz/fCQZxWpcNqzXmo/y8bbKycXGKA7P3pggBKPjHYGwJ
+         af1h8Hei4QAdcAr4t0Pt3JXyWkzoyuDQxZ2asLK0Sqy7WLJVQRfo47b209QfGtq2gehH
+         fcelXP5kfgsoFBIDVYdOnTR0YrQ0xzaXS9E+J1eMcFGDIGiWrK40NFZcQiMuJ9tozAJP
+         aKJLxtxUNcvcftYTRyf3urbCQxYN30Z98m/FiSZoYbLOdDvl9hVpeSlYrnqFEbJ1R+02
+         tG+w=ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailer.infoq.com header.s=s1 header.b¡fx5kat;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=KAuagKwX;
+       spf=pass (google.com: domain of bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com designates 167.89.107.173 as permitted sender) smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailer.infoq.com
+Received-SPF: pass (zoho.com: domain of _spf.google.com designates 209.85.215.48 as permitted sender) client-ip 9.85.215.48; envelope-from=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com; helo=mail-lf0-f48.google.com;
+Received-SPF: pass (google.com: domain of bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com designates 167.89.107.173 as permitted sender) client-ip7.89.107.173;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailer.infoq.com header.s=s1 header.b¡fx5kat;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=KAuagKwX;
+       spf=pass (google.com: domain of bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com designates 167.89.107.173 as permitted sender) smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=mailer.infoq.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=mailer.infoq.com;
+	h=content-type:from:mime-version:reply-to:subject:to:list-unsubscribe;
+	s=s1; bh=tkqvFhoK2cdyvcYVJ5+kOyuDyUs=; b¡fx5katbexmn0svVJmUCmo
+	vV6KScx94k6+sgdJ9RMTfBELN+3bHzFBsJlp23J3YBSnNWhtqK1zfKrBeM0V4owV
+	xb3tprkwQgzk21Mau+CNtCHvxZy7M66dU2zbEumKfu5Nv5/0l51/50bTS49w1nON
+	q7cwrz1EgQXrO4LqfaokDKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:reply-to:subject:to:list-unsubscribe:x-feedback-id;
+	s=smtpapi; bh=tkqvFhoK2cdyvcYVJ5+kOyuDyUs=; b=KAuagKwX7p7p8Qu7W6
+	RvNEwAogg2EJgzCO0EiMOA5NLgVF1b38tujd/zjbIh/cHHxsjM6vVukOuqjlH88I
+	v270uhxo/YdRwGxwuz1jnXrBYigtvcfRLiiyV8mlkmbYFo1DdcZK07bmIcsnwTE1
+	3etZ6hgdOWoO1vrPX3ieR1ObsContent-Type: multipart/alternative; boundaryK374bee714e66ca9339ee0abd1b5c4680f287be82c330728511c4bc4c78
+Date: Fri, 18 May 2018 08:02:58 +0000 (UTC)
+From: "InfoQ" <newsletter@mailer.infoq.com>
+Mime-Version: 1.0
+Reply-To: newsletter@mailer.infoq.com
+Subject: Streaming Architecture Special Report
+To: akixe.otegi@gmail.com
+Message-ID: <p0ojE9IzT1q9HjCcJWLFUw@ismtpd0023p1mdw1.sendgrid.net>
+List-Unsubscribe: <mailto:unsubscribe@mktg.mailer.infoq.com?subject=http://links.mailer.infoq.com/asm/unsubscribe/*q*user_idA27989*a*data^EPw96e-9gHvN4ljqxu2uyxa7Q9S_hye2qbOw4sZQBXceRjIU3u4GymSc69vKohzCA3mHoeAxIpAkQa7EPYNdZ_QKT9HhgrzFTDUr1zxYKYsUxENDfW4w4K5J9JW1ln9xXdca8lno6NOHEWplzNHvD6DpbEG0gx2GPFMj6RwJWYM7FIuqEDQ_oUNz644OlEYJw7JWMdT7yQXN24uShgla8aNQ4JqxCzbNf-Abo7wa83LDCLbIushkJaB_-Yy0hJipAYlPjuKyp9nDGxaHF9oYYCq7o-nfIT86qPFvi8C0GSxheaFDn0LBtHQugp9LbQh8NAjpUprnHIxd7j-NJiJHDeQbhPv_DZxtbMz3WPtWRekQ9WkYKqZyFpo1Vi0pHC9W5QRB_a5fIT_Bsk7wk8MgwvaVSRDoJbXlPPxOur41NZvwwgKqbjWTOrt2esTYLBAcNwh8B8DS1jkZVPDk4thOprCiJGLONUD77Y7NEXszPxaGKxussjqxYI_vBwmd1X3CDFx7gTBhUwceKTOOEANPEi4_wbgSvsGK51NMKCoPNy4pGfd01wWqxvoC9xFMU5Qs56nJ2ionzobk4dy16XLFVKFGp72PgXy-MlysUXHBVMpwMp-e5K6H6KBZ28UDnq>
+X-SG-EID: A/DDOwrv+CfsDGRLCqJTDG7FqmkLidWn4p3gv76jQ7Nn0A7jVD7W2MGzkKPrkNkJEGwxSTugEkosLH
+ Zl8aBUfkvs3Xy16C/Tl3a7F5/6KvMyVgQcMWbjl0vMwlJmmJ3Ta3IAXsW/Nh35e4VZzRXMVQkGdgly
+ jCGengeHg4gu0h/Ptyfd/IoA50pquMn8xWGuh3Dpct3dJ6A9WgnmeTJwPgjmyFEghQD3+riGfA5OMh
+ 4X-SG-ID: Z2FxZazunBjVeNuNdzHDqrF8mxuCpi0krmont6YQrP2dw+FB//nPoHfrBMa+5gvWuu+iM4soVmfU6P
+ OglOVujw+qrwSpRJ2tJ3ivjDQtvnAMfd7dJpR9uW+QgXGCW9IRVXSr8ar3zI8bXFLA2gTK8QW3lrsf
+ nqIjBEYOneg18bHcQIT2NPYhIOWrlnLJE/Uiq6ooFXiNtR+0/MMEdJXTrAojxiKs9uPlgR81baf8c7
+ BkBh3xnIlyU9zVBc7264spsTFfCdd6fO1EZl071KXgew=X-Feedback-ID: 4127989:3/Lg4Cqy9U0YeNyopUz7cW87vssTA92d+DTldz5PB/U=:HPWtw3WkfB7LrpzgvY3fsuO1ioeoAZs7Pw/y5C3tPS8=:SG
+X-ZohoMail-DKIM: pass (identity @mailer.infoq.com)
+X-ZohoMail: RDKM_0  RSF_0  Z_638880567 SPT_1 UDT_36 RF_0 S_164
+
+--4b374bee714e66ca9339ee0abd1b5c4680f287be82c330728511c4bc4c78
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+May 2018
+
+Streaming Architecture Special Report 
+
+Sponsored by
+
+Latest Content #latest-content, Top Viewed Content #top-viewed-content, News #news, Top Articles #top-articles, Top Presentations #top-presentations-and-interviews
+
+In this special newsletter we bring you up to date on all the new content and news related to Streaming Architecture on InfoQ. We are also maintaining a portal page for this content on InfoQ at: http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t43/KQbMVhR9JJ0jpkXH3DPydZiLrSo4sTeRT4Fg3ZoEzNM-3D http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t44/KQbMVhR9JJ0jpkXH3DPydSrlU2HfPtzWE1ZNiVTYx1HdnSrURTJe0lM66Vweo8hk1SSCW89hUmllg1nknib1mR5KDz6Pbj67jNthIN0-2FC2-2BBVFoUef-2B5e2l9F8ERFR-2BhnFHJhqQyYHD4JKN6S6HK5-2B8yNPn1RSsLmYm-2Fnr5LF5s-3D
+
+undefined
+ Latest Content on InfoQ
+
+Streaming SQL Foundations: Why I Love Streams+Tables http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t45/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncEU0Q9uZB4XrZxyFMhIIZMQ1waue4NyJEX0y0-2BwZqEC-2B8B1PaEQv1mM9A29wox9DEwrL0Cc4GskBoUigsERqKwyKgz8D68EwsmPke-2BGEJOTRryyNmTMZ5mVxm94URM2FMrkw5CieUpsS5q4Y4ELcHHW (presentations, May 04, 2018)
+
+Hazelcast Releases Jet 0.6 for Stream and Fast Batch Processing http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t46/zE2igK1BNm6HJNtZ2wrAAgkc4qJ1zJVtZnxUrOKVpAmVD9Rlrhf3M4ePzbMY32qCgtfd55LftAoYx4TNiM9jmrkDEtko-2By5MJ0YsR1AvKypDnIFeG7L1qOs91FSd8PV9zbquztIbxE7S90lOmtKrqX-2BD8LubL7vj8IBZ-2B2on0gKUACd6ZFAJTJaWyl1o5hZE (news, Apr 24, 2018)
+
+Streaming Reactive Systems & Data Pipes w. Squbs http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t47/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGvk0zpoBmQwPMEjtFwY7euBYBbTxyfCvAwFEtOu7tsbwFoffzLtwhz2XlgMk1gYDtnNK9ZiUWBVsSobDvZ-2F-2FYbTrcZskfcc3BNTcNfRJ8tCssrFSERmRkHJN3xlw6uoLs-3D (presentations, May 04, 2018)
+
+Next Steps in Stateful Streaming with Apache Flink http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t48/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWxO0iPBtZ57nz05JE293YqHMhztHIgXMH7TdqAeSY9n9dt1o-2BdKQLwkaVctym8v4cLru0eVF8I73cPau4hl-2Bjohr3GPeRsfvpAW7MbZZmtg9aPgKOvXeFoxBYRiW0VMEYtW0N6-2F1prRLikZL29-2FTEdS (presentations, May 02, 2018)
+
+A Reference Guide to Stream Processing http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t49/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKIbh8NCXIV-2BPw8klx7nq2FlhP1lAdfwMeU67nMtPe-2F-2F5 key 
+concepts for building a streaming pipeline: definition of the 
+dataflow, keyed aggregation, and windowing . Explore runtime 
+aspects and tradeoffs between performance and correctness and
+gain an overview of distributed stream processing engines.
+Download Now http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t50/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKF3HJYy53pd1ILQxYviqoTM-3D
+
+Sponsored content
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t51/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D
+
+undefined
+ Top Viewed Content on InfoQ
+
+Is Batch ETL Dead, and is Apache Kafka the Future of Data Processing? http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t52/zE2igK1BNm6HJNtZ2wrAArBs-2FrW6kwN9kpLiwPnCcEU2GKpkBgnNKJPYGOzN9JJOaZMEEMXxlGBFATZkD2m8F7KhilVRZ3Royoy2VX8HNQZ42VFfijszC9vpffXq7K3ZIDnRZPKt-2FWPxC0JB2R1TpfInFn-2B0zqFx3hbxej-2B3-2F5xF9xq-2F1R3l-2BwsPXpUpYB9D (articles, Jan 22, 2018)
+
+The InfoQ eMag: Streaming Architecture http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t53/zE2igK1BNm6HJNtZ2wrAAsrtphSjIBiOSDTaur9mcJNjl5ShVL-2Flf0sAd3AabE7vO9fA-2BUPtQsb-2BHLgi5GS-2BNTPul8cGyRa28PKkQIHXKqkPFzvTNQWkSWAJ0Ym8eeUqiwodPiA3ErWRIklE-2Ffeq1PTfn2TI-2B-2FINskTwvSAMedNjGv1ypUPiBl7KnCE7jDyX (books, Jan 07, 2018)
+
+Big Data Processing with Apache Spark http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t54/zE2igK1BNm6HJNtZ2wrAAmQbvVI9WL0WqhqAFBRNxR1oJqUumRBNr3nl-2FgJsdm1xhSA-2FdbRoA29B-2FXOQldLyQtP4LaUAlzzcM0zUwoSVLK1HGC09Rq4luWQDl5UFmk8iXphhGsRZl3-2BHJws3T2bwPsPuG4-2FrLtsp-2BMwYAwJ7TY4-3D (books, Feb 23, 2018)
+
+Kafka Streams - from the Ground Up to the Cloud http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t55/zE2igK1BNm6HJNtZ2wrAAg1UVxFNI2Grlk6fce1SwBCNMqqKuAanzvaLamSJWj74RBqCiCERvNGaqSy8sLxlPuMw-2BHWhx7hIahFrxyHPsvGAgbw0n81dG5JeKzY8jX3ZOrZEPDpQoGA5myorNfN9X0riA2BKZM9wn677wWmuKyTjkmoNere5FzjDbgVup-2B4B (presentations, Mar 01, 2018)
+
+undefined
+ Top News
+
+Spring Cloud Stream 2.0 Released with Focus on Performance, Flexibility and Consistency http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t56/zE2igK1BNm6HJNtZ2wrAAscFmlqf3uTxMo5W88mtot-2FIOsTaZI9qrQoBFf1wIBnzIFMTF-2B8Vx30WE9oOCW8SYqzruSc2PxtxpUCjn0QlmftIv-2FUe0sWMk8LBR41F1pN7anp-2Fy1VIk5SQ-2BFoITl7w2MubM96zHxoObTGp50vztwO8glZZes8OOrwWbR1LesXq
+ Pivotal has announced the General Availability release of the Spring Cloud Stream 2.0. This release includes a complete revamp of content-type negotiation functionality (allowing user-defined message converters), polling consumers, micrometer metrics support, enhanced Apache Kafka Streams support, and more.
+
+Apache Kafka Reaches 1.0 http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t57/zE2igK1BNm6HJNtZ2wrAAj3wTaLQmTuf5ohFYTXsdXSaP2PYjquNjfxMqCKaiMj855nO1eOr2sN1C6-2FAOB4D2cexiNQBR3C-2BqeRmxg7DzOScf-2BstbJN2K0YM3uopkFKJATPYdJriXL4sFQqvP3dEJ6zud18R0JRTLf1HUYr8ftkUQb-2FaG2BBHbiVqLxDzrGD
+ The Apache Software Foundation has announced Apache Kafka 1.0, adding an improved Streams API, enhanced metrics, improved tolerance for disk failures, general bug fixes, and more.
+
+Getting Started with Stream Processing http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t58/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D
+ This white paper examines the how to build a stream processing application using a sample âlive bettingâ application called JetLeopard. Code for the âlive bettingâ application is provided via Github repository. Download Now http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t59/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fs689Fj90i-2F1Qvg-2F2w-2FCfeQ-3D
+
+Sponsored content
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t60/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D
+
+Confluent Releases KSQL, a Distributed Streaming SQL Engine for Apache Kafka http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t61/zE2igK1BNm6HJNtZ2wrAAmsh0vQP-2BjTJ69h33Ah7KgEzZ9aQtL1s6rRVvWfzSOdISDdLmK-2FbAkRKh7oBFGthtNLyUdgtgFk-2FXa3TOR9h2vU0lLpYQ2EYd6bxfSpoeD9YeUvXdh7AZPR5648xZk81B1QCCG-2FV6YoCqqUYKWKLjiMtigSDRbO4gxxcjG9eWWlB
+ Confluent released KSQL: interactive, distributed streaming SQL engine for Apache Kafka. KSQL supports stream processing operations like aggregations, joins, windowing, and sessionization on topics in Apache Kafka. Confluent announced the open source streaming SQL engine at the recent Kafka Summit conference.
+
+Event Architectures and Event Streaming http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t62/zE2igK1BNm6HJNtZ2wrAAmPXBrDCLql8gKQF-2Fkj08W6b46QbgNaRPDOSRatP3YVotZn2GRk2U6XMLoECxnSXtEMJSK89fdlj95-2BRave0yDAXFgJnraL52o-2F5gu6XvkXVx1lukp2Djp-2B7Hwy450w1UiFrO0qLGSMWb0-2Fqhx4UoKTIZXEwXQ98r7EWpUD-2B-2FRyi
+ When moving from a monolithic system to a distributed or microservices system, you commonly also move from a single source of truth in one database to many databases and thus many sources of truth. Using an event architecture and persisting all events as a stream can give back the single source of truth, Ben Stopford claims in one of a series of blog posts about events, event streams and Kafka.
+
+undefined
+ Top Articles
+
+Streaming: Danny Yuan on Real-Time, Time Series Forecasting @Uber http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t63/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D
+
+Yuan discusses everything from the scale Uber operates at to the major steps for training/deploy models in an iterative (almost Darwinistic) fashion.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t64/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D
+
+Exploring the Fundamentals of Stream Processing with the Dataflow Model and Apache Beam http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t65/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2
+
+At QCon SF 2016, Frances Perry and Tyler Akidau presented âFundamentals of Stream Processing with Apache Beamâ, and discussed Google's Dataflow model and associated implementation of Apache Beam.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t66/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2
+
+Migrating Batch ETL to Stream Processing: A Netflix Case Study with Kafka and Flink http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t67/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D
+
+At QCon NY, Shriya Arora presented âPersonalising Netflix with Streaming Datasetsâ and discussed a migration of a data processing job from batch-style ETL to stream processing using Apache Flink.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t68/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D
+
+InfoQ eMag: Big Data Processsing with Apache Spark http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t69/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu
+
+In this mini-book, the reader will learn about the Apache Spark framework and will develop Spark programs for use cases in big-data analysis.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t70/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu
+
+Building Real-Time Data Pipelines with Stream Processing (Live Webinar, May 22nd) http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t71/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D
+ In this webinar, youâll learn how to build batch and streaming data pipelines using the fluent, high-level Java API of Hazelcast Jet, a 3rd generation stream processing engine. Register Now http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t72/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoUw8oKIAmZ7oaI3RMKEmdiQ-3D
+
+Sponsored content
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t73/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D
+
+undefined
+ Top Presentations
+
+Data Decisions with Real-Time Stream Processing http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t74/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe
+
+Serhat Yilmaz talks about how Facebook is using stream processing at scale, the difficulties they have encountered and the solutions they have created to date.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t75/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe
+
+The Power of Distributed Snapshots in Apache Flink http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t76/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D
+
+Stephan Ewen talks about how Apache Flink handles stateful stream processing and how to manage distributed stream processing & data driven applications efficiently with Flink's checkpoints&savepoints.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t77/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D
+
+Servlet or Reactive Stack: you have choices... http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t78/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D
+
+Rossen Stoyanchev compares Spring Servlet with Reactive Streams and discusses what can be done with them.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t79/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D
+
+Panel: SQL over Streams, Ask the Experts http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t80/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP
+
+The panelists discuss the new generation of Stream Processing engines.
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t81/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t82/9RXDenI7BReTpKa-2F42PXTDOWeEyWhhClNJAmzZbhsDE-3D
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t83/HE2UYZIDTZxfLuJ8qHDFiClq6xr018yWpDAuUZuvblnJSrazFHJERrfl5bfgtFDh
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t84/VHbukt9MUWuI8xxF4-2FIRYe4RF7k6aFGEO2IeRH4Yr9jauisJwoAxR5qj1oTsiFLe
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t85/HpF-2FgN2L-2BTd3XbGhi4PFtdLAuFWSkaoSn7SQNBnP71Tjq2TdmpkBgzo6KfHb07PK
+
+http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t86/laCycbjzuDwe-2BXNTOL9-2Fdk7OqqunYdv2LZ9YPwX2kV8-3D
+
+You have received this email because you subscribed to "The InfoQ Weekly Newsletter". To stop receiving weekly updates on hot trends, please click the following link: 
+
+Unsubscribe http://links.mailer.infoq.com/asm/unsubscribe/?user_id=4127989&data=5eEPw96e-9gHvN4ljqxu2uyxa7Q9S_hye2qbOw4sZQBXceRjIU3u4GymSc69vKohzCA3mHoeAxIpAkQa7EPYNdZ_QKT9HhgrzFTDUr1zxYKYsUxENDfW4w4K5J9JW1ln9xXdca8lno6NOHEWplzNHvD6DpbEG0gx2GPFMj6RwJWYM7FIuqEDQ_oUNz644OlEYJw7JWMdT7yQXN24uShgla8aNQ4JqxCzbNf-Abo7wa83LDCLbIushkJaB_-Yy0hJipAYlPjuKyp9nDGxaHF9oYYCq7o-nfIT86qPFvi8C0GSxheaFDn0LBtHQugp9LbQh8NAjpUprnHIxd7j-NJiJHDeQbhPv_DZxtbMz3WPtWRekQ9WkYKqZyFpo1Vi0pHC9W5QRB_a5fIT_Bsk7wk8MgwvaVSRDoJbXlPPxOur41NZvwwgKqbjWTOrt2esTYLBAcNwh8B8DS1jkZVPDk4thOprCiJGLONUD77Y7NEXszPxaGKxussjqxYI_vBwmd1X3CDFx7gTBhUwceKTOOEANPEi4_wbgSvsGK51NMKCoPNy4pGfd01wWqxvoC9xFMU5Qs56nJ2ionzobk4dy16XLFVKFGp72PgXy-MlysUXHBVMpwMp-e5K6H6KBZ28UDnq
+
+C4Media Inc. (InfoQ.com), 
+
+2275 Lake Shore Boulevard West, 
+
+Suite #325, 
+
+Toronto, Ontario, Canada, 
+
+M8V 3Y3
+--4b374bee714e66ca9339ee0abd1b5c4680f287be82c330728511c4bc4c78
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Roboto:400,700" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Roboto:400,700" rel="stylesheet">
+    <!-- CSS Reset -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin:0 !important;
+        }
+        
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+                
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto; 
+        }
+        
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+        
+        /* What it does: A work-around for iOS meddling in triggered links. */
+        *[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+
+        /* What it does: A work-around for Gmail meddling in triggered links. */
+        .x-gmail-data-detectors,
+        .x-gmail-data-detectors *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+        }
+
+        
+        /* What it does: Prevents underlining the button text in Windows 10 */
+        .button-link {
+            text-decoration: none !important;
+        }
+      
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+    
+    </style>
+    
+    <!-- Progressive Enhancements -->
+    <style>
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 480px) {
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+        }
+
+    </style>
+
+</head>
+<body width="100%" bgcolor="#f3f3f3" style="margin: 0; mso-line-height-rule: exactly;">
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style type=âtext/cssâ>
+            body, table, td {
+                font-family: Helvetica, Arial, sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+    <center style="width: 100%; background: #f3f3f3;">
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+            
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!--    
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.  
+        -->
+        <div style="max-width: 680px; margin: auto;" class="email-container">
+            <!--[if mso]>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Header : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+                <tr>
+                    <td style="padding: 20px 0; text-align: left;font-family: Roboto, Helvetica, Arial, sans-serif; font-size: 11px; line-height: 16px; color: #777777;">
+                        May 2018
+                    </td>
+                </tr>
+            </table>
+            <!-- Email Header : END -->
+
+
+             <!-- Email Body : BEGIN -->
+             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+                
+                <!-- Logo and Title left, Sponsored by right : BEGIN -->
+                <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding: 10px 10px 0 10px;">
+                        <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" style="font-size:0; padding: 10px 0;">
+                                    <!--[if mso]>
+                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width:66.66%; min-width:320px; vertical-align:top;" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td dir="ltr" style="font-family:'Fira Sans',Helvetica,Arial,sans-serif; padding: 10px 10px 0 0; text-align: left;" class="center-on-narrow">
+                                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/infoq_logo-sr-2017.png" width="144" height="43" border="0" alt="InfoQ" class="center-on-narrow" style="width: 100%; max-width: 144px; height: 43px; display:block;">
+                                                    <h1 class="align-left" style="font-size: 30px; line-height: 34px; color: #000;padding:5px 0 10px 0;margin:0; font-weight: 600">Streaming Architecture Special Report</h1>                                             
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                                    <div style="display:inline-block; margin: 0 -2px; max-width: 200px; min-width:160px; vertical-align:top; width:100%;" class="stack-column">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td dir="ltr" style="text-align:right; padding: 0 10px 0 0;font-family:'Roboto',Helvetica,Arial,sans-serif; font-size: 11px; line-height: 16px; color:#5B8A6A;text-align:right; text-transform:uppercase;" class="center-on-narrow">               
+                                                    Sponsored by
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td dir="ltr" style="line-height: 60px; text-align: right;" width="100%">
+                                            		<img src="https://www.infoq.com/zones/assets/images/specialreport/hazelcast-logo.png" height="29" border="0" alt="AppDynamics" class="center-on-narrow" style="float: right; width: auto; display: block; max-width: 100%">
+                                            	</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- Logo and Title left, Sponsored by right : END -->
+
+                <!-- Internal email links : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 0px 20px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 28px; color: #333333;">
+                                    <a href="#latest-content" style="color:#0064DA;" >Latest Content</a>, <a href="#top-viewed-content" style="color:#0064DA;" >Top Viewed Content</a>, <a href="#news" style="color:#0064DA;" >News</a>, <a href="#top-articles" style="color:#0064DA;" >Top Articles</a>, <a href="#top-presentations-and-interviews" style="color:#0064DA;" >Top Presentations</a>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Internal email links : END -->
+
+                <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td bgcolor="#eeeeee" height="1" style="font-size: 0; line-height: 0;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+
+                <!-- Introductory Paragraph : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 40px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                        In this special newsletter we bring you up to date on all the new content and news related to Streaming Architecture on InfoQ. We are also maintaining a portal page for this content on InfoQ at: <a style="color:#0064DA;" href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h0/KQbMVhR9JJ0jpkXH3DPydSrlU2HfPtzWE1ZNiVTYx1HdnSrURTJe0lM66Vweo8hk1SSCW89hUmllg1nknib1mR5KDz6Pbj67jNthIN0-2FC2-2BBVFoUef-2B5e2l9F8ERFR-2BhnFHJhqQyYHD4JKN6S6HK58eYjjVnxsdjIjdgdLasiAQ-3D">https://www.infoq.com/streaming</a>.
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Introductory Paragraph : END -->
+
+                <!-- Latest Blue Bar Title Section : BEGIN -->
+                <tr>
+                    <td bgcolor="#2298D3">
+                        <table role="presentation" id="latest-content" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 20px 20px; text-align: left; font-family: 'Fira Sans',Helvetica,Arial,sans-serif; font-size: 22px; line-height: 28px; color: #fff; font-weight:600;"><a id="latest-content" name="latest-content"></a>
+                                        Latest Content on InfoQ
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Latest Blue Bar Title Section : END -->
+
+                <!-- Latest Content : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h1/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncEU0Q9uZB4XrZxyFMhIIZMQ1waue4NyJEX0y0-2BwZqEC-2B8B1PaEQv1mM9A29wox9DEwrL0Cc4GskBoUigsERqKwyKgz8D68EwsmPke-2BGEJOTRryyNmTMZ5mVxm94URM2FMrkw5CieUpsS5q4Y4ELcHHW" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Streaming SQL Foundations: Why I Love Streams+Tables</a> (presentations, May 04, 2018)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h2/zE2igK1BNm6HJNtZ2wrAAgkc4qJ1zJVtZnxUrOKVpAmVD9Rlrhf3M4ePzbMY32qCgtfd55LftAoYx4TNiM9jmrkDEtko-2By5MJ0YsR1AvKypDnIFeG7L1qOs91FSd8PV9zbquztIbxE7S90lOmtKrqX-2BD8LubL7vj8IBZ-2B2on0gKUACd6ZFAJTJaWyl1o5hZE" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Hazelcast Releases Jet 0.6 for Stream and Fast Batch Processing</a> (news, Apr 24, 2018)
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 8px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h3/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGvk0zpoBmQwPMEjtFwY7euBYBbTxyfCvAwFEtOu7tsbwFoffzLtwhz2XlgMk1gYDtnNK9ZiUWBVsSobDvZ-2F-2FYbTrcZskfcc3BNTcNfRJ8tCssrFSERmRkHJN3xlw6uoLs-3D" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Streaming Reactive Systems & Data Pipes w. Squbs</a> (presentations, May 04, 2018)
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 8px 20px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h4/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWxO0iPBtZ57nz05JE293YqHMhztHIgXMH7TdqAeSY9n9dt1o-2BdKQLwkaVctym8v4cLru0eVF8I73cPau4hl-2Bjohr3GPeRsfvpAW7MbZZmtg9aPgKOvXeFoxBYRiW0VMEYtW0N6-2F1prRLikZL29-2FTEdS" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Next Steps in Stateful Streaming with Apache Flink</a> (presentations, May 02, 2018)
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Latest Content : END -->
+
+
+                  <!-- Sponsored Section #1 : BEGIN -->
+                <tr>
+                    <td bgcolor="#f3f3f3" align="center" height="100%" valign="top" width="100%">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 30px 10px 30px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h5/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D" style="color:#0E0E0E;text-decoration:none;">A Reference Guide to Stream Processing</a></h2>Learn key 
+concepts for building a streaming pipeline: definition of the 
+dataflow, keyed aggregation, and windowing . Explore runtime 
+aspects and tradeoffs between performance and correctness and
+gain an overview of distributed stream processing engines.
+<a style="color:#0064DA; font-weight: 700;" href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h6/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D">Download Now</a>.
+                                                <p style="margin-bottom:0;text-transform:uppercase;font-size:11px;font-weight:700;color:#222;letter-spacing:.3px">Sponsored content</p>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 30px 0px 30px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h7/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D"><img src="https://assets.infoq.com/newsletter/special-report/en/hazelcast-A-Reference-Guide-to-Stream-Processing05182018.png" alt="A Reference Guide to Stream Processing" style="width: 70px; height: 100px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Sponsored Section #1 : END -->
+
+               
+                    
+                <!-- Top Viewed Content Title Section : BEGIN -->
+                <tr>
+                    <td bgcolor="#0D8F76">
+                        <table role="presentation" id="top-viewed-content" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 20px 20px; text-align: left; font-family: 'Fira Sans',Helvetica,Arial,sans-serif; font-size: 22px; line-height: 28px; color: #fff; font-weight:600;"><a id="top-viewed-content" name="top-viewed-content"></a>
+                                        Top Viewed Content on InfoQ
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top Viewed Content Title Section : END -->
+
+                <!-- Top Viewed Content : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h8/zE2igK1BNm6HJNtZ2wrAArBs-2FrW6kwN9kpLiwPnCcEU2GKpkBgnNKJPYGOzN9JJOaZMEEMXxlGBFATZkD2m8F7KhilVRZ3Royoy2VX8HNQZ42VFfijszC9vpffXq7K3ZIDnRZPKt-2FWPxC0JB2R1TpfInFn-2B0zqFx3hbxej-2B3-2F5xF9xq-2F1R3l-2BwsPXpUpYB9D" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Is Batch ETL Dead, and is Apache Kafka the Future of Data Processing?</a> (articles, Jan 22, 2018)
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 8px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h9/zE2igK1BNm6HJNtZ2wrAAsrtphSjIBiOSDTaur9mcJNjl5ShVL-2Flf0sAd3AabE7vO9fA-2BUPtQsb-2BHLgi5GS-2BNTPul8cGyRa28PKkQIHXKqkPFzvTNQWkSWAJ0Ym8eeUqiwodPiA3ErWRIklE-2Ffeq1PTfn2TI-2B-2FINskTwvSAMedNjGv1ypUPiBl7KnCE7jDyX" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">The InfoQ eMag: Streaming Architecture</a> (books, Jan 07, 2018)
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 8px 20px 8px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h10/zE2igK1BNm6HJNtZ2wrAAmQbvVI9WL0WqhqAFBRNxR1oJqUumRBNr3nl-2FgJsdm1xhSA-2FdbRoA29B-2FXOQldLyQtP4LaUAlzzcM0zUwoSVLK1HGC09Rq4luWQDl5UFmk8iXphhGsRZl3-2BHJws3T2bwPsPuG4-2FrLtsp-2BMwYAwJ7TY4-3D" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Big Data Processing with Apache Spark</a> (books, Feb 23, 2018)
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 8px 20px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 23px; color: #777777;">
+                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h11/zE2igK1BNm6HJNtZ2wrAAg1UVxFNI2Grlk6fce1SwBCNMqqKuAanzvaLamSJWj74RBqCiCERvNGaqSy8sLxlPuMw-2BHWhx7hIahFrxyHPsvGAgbw0n81dG5JeKzY8jX3ZOrZEPDpQoGA5myorNfN9X0riA2BKZM9wn677wWmuKyTjkmoNere5FzjDbgVup-2B4B" style="Margin:0;color:#0E0E0E;text-decoration:none; font-weight:700;font-size: 16px;display:block;">Kafka Streams - from the Ground Up to the Cloud</a> (presentations, Mar 01, 2018)
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top Viewed Content : END -->
+
+                <!-- Top News Title Section : BEGIN -->
+                <tr>
+                    <td bgcolor="#2780AE">
+                        <table role="presentation" id="news" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 20px 20px; text-align: left; font-family: 'Fira Sans',Helvetica,Arial,sans-serif; font-size: 22px; line-height: 28px; color: #fff; font-weight:600;"><a id="news" name="news"></a>
+                                        Top News
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top News Title Section : END -->
+
+                <!-- Top News Content : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 40px 20px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                    <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h12/zE2igK1BNm6HJNtZ2wrAAscFmlqf3uTxMo5W88mtot-2FIOsTaZI9qrQoBFf1wIBnzIFMTF-2B8Vx30WE9oOCW8SYqzruSc2PxtxpUCjn0QlmftIv-2FUe0sWMk8LBR41F1pN7anp-2Fy1VIk5SQ-2BFoITl7w2MubM96zHxoObTGp50vztwO8glZZes8OOrwWbR1LesXq" style="color:#0E0E0E;text-decoration:none;">Spring Cloud Stream 2.0 Released with Focus on Performance, Flexibility and Consistency</a></h2>
+                                    Pivotal has announced the General Availability release of the Spring Cloud Stream 2.0. This release includes a complete revamp of content-type negotiation functionality (allowing user-defined message converters), polling consumers, micrometer metrics support, enhanced Apache Kafka Streams support, and more.
+                                </td>
+                            </tr>
+							<tr>
+                                <td style="padding: 20px 20px 30px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                    <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h13/zE2igK1BNm6HJNtZ2wrAAj3wTaLQmTuf5ohFYTXsdXSaP2PYjquNjfxMqCKaiMj855nO1eOr2sN1C6-2FAOB4D2cexiNQBR3C-2BqeRmxg7DzOScf-2BstbJN2K0YM3uopkFKJATPYdJriXL4sFQqvP3dEJ6zud18R0JRTLf1HUYr8ftkUQb-2FaG2BBHbiVqLxDzrGD" style="color:#0E0E0E;text-decoration:none;">Apache Kafka Reaches 1.0</a></h2>
+                                    The Apache Software Foundation has announced Apache Kafka 1.0, adding an improved Streams API, enhanced metrics, improved tolerance for disk failures, general bug fixes, and more.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top News Content : END -->
+                    
+                <!-- Sponsored Section #1 : BEGIN -->
+                <tr>
+                    <td bgcolor="#f3f3f3" align="center" height="100%" valign="top" width="100%">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 30px 10px 30px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h14/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D" style="color:#0E0E0E;text-decoration:none;">Getting Started with Stream Processing</a></h2>
+                                                     This white paper examines the how to build a stream processing application using a sample âlive bettingâ application called JetLeopard. Code for the âlive bettingâ application is provided via Github repository. <a style="color:#0064DA; font-weight: 700;" href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h15/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D">Download Now</a>.
+                                                <p style="margin-bottom:0;text-transform:uppercase;font-size:11px;font-weight:700;color:#222;letter-spacing:.3px">Sponsored content</p>
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 30px 0px 30px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h16/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D"><img src="https://www.infoq.com/zones/assets/images/specialreport/hazelcast-GettingStarted.png" alt="Getting Started with Stream Processing" style="width: 70px; height: 100px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Sponsored Section #1 : END -->
+
+                <!-- Top News Content Continued : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tr>
+                                <td style="padding: 30px 20px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                    <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h17/zE2igK1BNm6HJNtZ2wrAAmsh0vQP-2BjTJ69h33Ah7KgEzZ9aQtL1s6rRVvWfzSOdISDdLmK-2FbAkRKh7oBFGthtNLyUdgtgFk-2FXa3TOR9h2vU0lLpYQ2EYd6bxfSpoeD9YeUvXdh7AZPR5648xZk81B1QCCG-2FV6YoCqqUYKWKLjiMtigSDRbO4gxxcjG9eWWlB" style="color:#0E0E0E;text-decoration:none;">Confluent Releases KSQL, a Distributed Streaming SQL Engine for Apache Kafka</a></h2>
+                                    Confluent released KSQL: interactive, distributed streaming SQL engine for Apache Kafka. KSQL supports stream processing operations like aggregations, joins, windowing, and sessionization on topics in Apache Kafka. Confluent announced the open source streaming SQL engine at the recent Kafka Summit conference.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+							<tr>
+                                <td style="padding: 20px 20px 30px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                    <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h18/zE2igK1BNm6HJNtZ2wrAAmPXBrDCLql8gKQF-2Fkj08W6b46QbgNaRPDOSRatP3YVotZn2GRk2U6XMLoECxnSXtEMJSK89fdlj95-2BRave0yDAXFgJnraL52o-2F5gu6XvkXVx1lukp2Djp-2B7Hwy450w1UiFrO0qLGSMWb0-2Fqhx4UoKTIZXEwXQ98r7EWpUD-2B-2FRyi" style="color:#0E0E0E;text-decoration:none;">Event Architectures and Event Streaming</a></h2>
+                                    When moving from a monolithic system to a distributed or microservices system, you commonly also move from a single source of truth in one database to many databases and thus many sources of truth. Using an event architecture and persisting all events as a stream can give back the single source of truth, Ben Stopford claims in one of a series of blog posts about events, event streams and Kafka.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top News Content Continued : END -->
+
+                <!-- Top Articles Title Section : BEGIN -->
+                <tr>
+                    <td bgcolor="#0D8F76">
+                        <table role="presentation" id="top-articles" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 20px 20px; text-align: left; font-family: 'Fira Sans',Helvetica,Arial,sans-serif; font-size: 22px; line-height: 28px; color: #fff; font-weight:600;"><a id="top-articles" name="top-articles"></a>
+                                        Top Articles
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top Viewed Content Title Section : END -->
+
+                <!-- Top Articles Content : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 40px 10px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h19/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D" style="color:#0E0E0E;text-decoration:none;">Streaming: Danny Yuan on Real-Time, Time Series Forecasting @Uber</a>
+                                                </h2>
+                                                    Yuan discusses everything from the scale Uber operates at to the major steps for training/deploy models in an iterative (almost Darwinistic) fashion.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 40px 0px 20px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h20/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D"><img src="https://res.infoq.com/podcasts/streaming-real-time-uber-time-series-danny-yuan/en/smallimage/logo-infoq-podcast%20-1522426397817.jpeg" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 20px 10px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h21/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2" style="color:#0E0E0E;text-decoration:none;">Exploring the Fundamentals of Stream Processing with the Dataflow Model and Apache Beam</a>
+                                                </h2>
+                                                    At QCon SF 2016, Frances Perry and Tyler Akidau presented âFundamentals of Stream Processing with Apache Beamâ, and discussed Google's Dataflow model and associated implementation of Apache Beam.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 20px 0px 20px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h22/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2"><img src="https://res.infoq.com/articles/dataflow-apache-beam/en/smallimage/logo-1517238084429.jpeg" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 20px 10px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h23/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D" style="color:#0E0E0E;text-decoration:none;">Migrating Batch ETL to Stream Processing: A Netflix Case Study with Kafka and Flink</a>
+                                                </h2>
+                                                    At QCon NY, Shriya Arora presented âPersonalising Netflix with Streaming Datasetsâ and discussed a migration of a data processing job from batch-style ETL to stream processing using Apache Flink.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 20px 0px 20px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h24/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D"><img src="https://res.infoq.com/articles/netflix-migrating-stream-processing/en/smallimage/logo-streaming-1517924434904.jpeg" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 20px 10px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h25/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu" style="color:#0E0E0E;text-decoration:none;">
+                                                    InfoQ eMag: Big Data Processsing with Apache Spark</a>
+                                                </h2>
+                                                    In this mini-book, the reader will learn about the Apache Spark framework and will develop Spark programs for use cases in big-data analysis.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 20px 0px 20px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h26/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu"><img src="https://res.infoq.com/minibooks/apache-spark/en/smallimage/logo-spark-1519381879167.jpeg" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Sponsored Section #2 : BEGIN -->
+				<tr>
+                    <td bgcolor="#f3f3f3" align="center" height="100%" valign="top" width="100%">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 30px 10px 30px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;"><a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h27/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D" style="color:#0E0E0E;text-decoration:none;">Building Real-Time Data Pipelines with Stream Processing (Live Webinar, May 22nd)</a></h2>
+                                                     In this webinar, youâll  learn how to build batch and streaming data pipelines using the fluent, high-level Java API of Hazelcast Jet, a 3rd generation stream processing engine. <a style="color:#0064DA; font-weight: 700;" href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h28/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D">Register Now</a>.
+                                                <p style="margin-bottom:0;text-transform:uppercase;font-size:11px;font-weight:700;color:#222;letter-spacing:.3px">Sponsored content</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 30px 0px 30px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h29/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D"><img src="https://www.infoq.com/zones/assets/images/specialreport/hazelcast-webinar.png" alt="Building Real-Time Data Pipelines with Stream Processing" style="width: 70px; height: 100px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Sponsored Section #2 : END -->
+                <!-- Top Articles Content : END -->
+                
+                <!-- Top Presentations Title Section : BEGIN -->
+                <tr>
+                    <td bgcolor="#008594">
+                        <table role="presentation" id="top-presentations-and-interviews" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 20px 20px 20px 20px; text-align: left; font-family: 'Fira Sans',Helvetica,Arial,sans-serif; font-size: 22px; line-height: 28px; color: #fff; font-weight:600;"><a id="top-presentations-and-interviews" name="top-presentations-and-interviews"></a>
+                                        Top Presentations
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top Presentations Title Section : END -->
+                
+                <!-- Top Presentations Content : BEGIN -->
+                <tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 40px 10px 20px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h30/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe" style="color:#0E0E0E;text-decoration:none;">
+                                                   Data Decisions with Real-Time Stream Processing</a>
+                                                </h2>
+                                                   Serhat Yilmaz talks about how Facebook is using stream processing at scale, the difficulties they have encountered and the solutions they have created to date.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 40px 0px 20px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h31/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe"><img src="https://res.infoq.com/presentations/facebook-stream-processing/en/smallimage/Ser-1519961761771.JPG" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 15px 10px 15px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h32/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D" style="color:#0E0E0E;text-decoration:none;">
+                                                    The Power of Distributed Snapshots in Apache Flink</a>
+                                                </h2>
+                                                    Stephan Ewen talks about how Apache Flink handles stateful stream processing and how to manage distributed stream processing & data driven applications efficiently with Flink's checkpoints&savepoints.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 15px 0px 15px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h33/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D"><img src="https://res.infoq.com/presentations/distributed-stream-processing-flink/en/smallimage/Ste-1518991394105.JPG" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 15px 10px 15px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h34/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D" style="color:#0E0E0E;text-decoration:none;">
+                                                    Servlet or Reactive Stack: you have choices...</a>
+                                                </h2>
+                                                    Rossen Stoyanchev compares Spring Servlet with Reactive Streams and discusses what can be done with them.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 15px 0px 15px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h35/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D"><img src="https://res.infoq.com/presentations/spring-servlet-reactive-streams/en/smallimage/Ros-1517709024543.JPG" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+                    <td bgcolor="#ffffff">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" valign="top" width="75%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 15px;text-align: left;">
+                                       
+                                        <tr>
+                                            <td style="padding: 15px 10px 40px 20px; text-align: left; font-family: 'Roboto',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 23px; color: #333333;">
+                                                <h2 style="font-size:20px; Margin:0; margin:0; padding: 0 0 10px 0;">
+                                                    <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h36/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP" style="color:#0E0E0E;text-decoration:none;">
+                                                   Panel: SQL over Streams, Ask the Experts</a>
+                                                </h2>
+                                                    The panelists discuss the new generation of Stream Processing engines.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="top" width="25%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+                                        <tr>
+                                            <td style="text-align: center; padding: 15px 0px 15px 0px;">
+                                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h37/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP"><img src="https://res.infoq.com/presentations/sql-streams-panel/en/smallimage/Pan1-1512562189959.JPG" alt="" style="width: 70px; height: 70px; max-width: 100px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Top Presentations Content : END -->
+
+                <!-- Clear Spacer : BEGIN -->
+                <tr>
+                    <td height="40" style="font-size: 0; line-height: 0;">
+                        &nbsp;
+                    </td>
+                </tr>
+                <!-- Clear Spacer : END -->
+            </table>
+            <!-- Email Body : END -->
+          
+            <!-- Email Footer : BEGIN -->
+            <center style="min-width:320px;width:100%">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 320px;">
+                    <tr>
+                        <td style="border-collapse:collapse!important;Margin:0;margin:0;padding:0;padding-left:5px;padding-right:5px;text-align:center;vertical-align:top;">
+                            <p style="text-align:center">
+                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h38/9RXDenI7BReTpKa-2F42PXTDOWeEyWhhClNJAmzZbhsDE-3D">
+                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/twitter-sr-2017.png" width="46" height="46" alt="Connect with InfoQ on Twitter">
+                                </a>
+                            </p>
+                        </td>
+                        <td style="border-collapse:collapse!important;Margin:0;margin:0;padding:0;padding-left:5px;padding-right:5px;text-align:center;vertical-align:top;">
+                            <p style="text-align:center">
+                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h39/HE2UYZIDTZxfLuJ8qHDFiClq6xr018yWpDAuUZuvblnJSrazFHJERrfl5bfgtFDh">
+                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/facebook-sr-2017.jpg" width="46" height="46" alt="Connect with InfoQ on Facebook">
+                                </a>
+                            </p>
+                        </td>
+                        <td style="border-collapse:collapse!important;Margin:0;margin:0;padding:0;padding-left:5px;padding-right:5px;text-align:center;vertical-align:top;">
+                            <p style="text-align:center">
+                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h40/VHbukt9MUWuI8xxF4-2FIRYe4RF7k6aFGEO2IeRH4Yr9jauisJwoAxR5qj1oTsiFLe">
+                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/linkedin-sr-2017.jpg" width="46" height="46" alt="Connect with InfoQ on LinkedIn">
+                                </a>
+                            </p>
+                        </td>
+                        <td style="border-collapse:collapse!important;Margin:0;margin:0;padding:0;padding-left:5px;padding-right:5px;text-align:center;vertical-align:top;">
+                            <p style="text-align:center">
+                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h41/HpF-2FgN2L-2BTd3XbGhi4PFtdLAuFWSkaoSn7SQNBnP71Tjq2TdmpkBgzo6KfHb07PK">
+                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/gplus-sr-2017.png" width="46" height="46" alt="Connect with InfoQ on Google Plus">
+                                </a>
+                            </p>
+                        </td>
+                        <td style="border-collapse:collapse!important;Margin:0;margin:0;padding:0;padding-left:5px;padding-right:5px;text-align:center;vertical-align:top;">
+                            <p style="text-align:center">
+                                <a href="http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/h42/laCycbjzuDwe-2BXNTOL9-2Fdk7OqqunYdv2LZ9YPwX2kV8-3D">
+                                    <img src="https://www.infoq.com/zones/assets/images/specialreport/youtube-sr-2017.png" width="46" height="46" alt="Connect with InfoQ on Youtube">
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+                
+                <tr>
+                    <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; line-height:18px; text-align: center; color: #888888;" class="x-gmail-data-detectors">
+                        You have received this email because you subscribed to "The InfoQ Weekly Newsletter". To stop receiving weekly updates on hot trends, please click the following link: 
+                        <unsubscribe>
+                            <a href='http://links.mailer.infoq.com/asm/unsubscribe/?user_id=4127989&data=5eEPw96e-9gHvN4ljqxu2uyxa7Q9S_hye2qbOw4sZQBXceRjIU3u4GymSc69vKohzCA3mHoeAxIpAkQa7EPYNdZ_QKT9HhgrzFTDUr1zxYKYsUxENDfW4w4K5J9JW1ln9xXdca8lno6NOHEWplzNHvD6DpbEG0gx2GPFMj6RwJWYM7FIuqEDQ_oUNz644OlEYJw7JWMdT7yQXN24uShgla8aNQ4JqxCzbNf-Abo7wa83LDCLbIushkJaB_-Yy0hJipAYlPjuKyp9nDGxaHF9oYYCq7o-nfIT86qPFvi8C0GSxheaFDn0LBtHQugp9LbQh8NAjpUprnHIxd7j-NJiJHDeQbhPv_DZxtbMz3WPtWRekQ9WkYKqZyFpo1Vi0pHC9W5QRB_a5fIT_Bsk7wk8MgwvaVSRDoJbXlPPxOur41NZvwwgKqbjWTOrt2esTYLBAcNwh8B8DS1jkZVPDk4thOprCiJGLONUD77Y7NEXszPxaGKxussjqxYI_vBwmd1X3CDFx7gTBhUwceKTOOEANPEi4_wbgSvsGK51NMKCoPNy4pGfd01wWqxvoC9xFMU5Qs56nJ2ionzobk4dy16XLFVKFGp72PgXy-MlysUXHBVMpwMp-e5K6H6KBZ28UDnq'>Unsubscribe</a>
+                        </unsubscribe>
+                        
+                        <br><br>
+                        <strong>C4Media Inc. (InfoQ.com)</strong>, <br/>
+                        2275 Lake Shore Boulevard West, <br/> 
+                        Suite #325, <br/>
+                        Toronto, Ontario, Canada, <br/> 
+                        M8V 3Y3
+                        <br><br>
+                        
+                    </td>
+                </tr>
+            </table>
+            <!-- Email Footer : END -->
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+
+<img src="http://links.mailer.infoq.com/mpss/o/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/o.gif" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+--4b374bee714e66ca9339ee0abd1b5c4680f287be82c330728511c4bc4c78--

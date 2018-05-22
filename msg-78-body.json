@@ -1,0 +1,590 @@
+[
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@zoho.com",
+        "encoded": "akixe.otegi@zoho.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mx.zohomail.com",
+        "encoded": "mx.zohomail.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "zoho.com",
+        "encoded": "zoho.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "209.85.215.48",
+        "encoded": "209.85.215.48"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "smtp.mailfrom=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com",
+        "encoded": "smtp.mailfrom=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mail-lf0-f48.google.com",
+        "encoded": "mail-lf0-f48.google.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mail-lf0-f48.google.com",
+        "encoded": "mail-lf0-f48.google.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "209.85.215.48",
+        "encoded": "209.85.215.48"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mx.zohomail.com",
+        "encoded": "mx.zohomail.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mail-lf0-f48.google.com",
+        "encoded": "mail-lf0-f48.google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@zoho.com",
+        "encoded": "akixe.otegi@zoho.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com",
+        "encoded": "akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "o2.mktg.mailer.infoq.com",
+        "encoded": "o2.mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "o2.mktg.mailer.infoq.com",
+        "encoded": "o2.mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "167.89.107.173",
+        "encoded": "167.89.107.173"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mx.google.com",
+        "encoded": "mx.google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@gmail.com",
+        "encoded": "akixe.otegi@gmail.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "d\u001e100.net",
+        "encoded": "d%1E100.net"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@zoho.com",
+        "encoded": "akixe.otegi@zoho.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@gmail.com",
+        "encoded": "akixe.otegi@gmail.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@zoho.com",
+        "encoded": "akixe.otegi@zoho.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mx.google.com",
+        "encoded": "mx.google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "header.i=@mailer.infoq.com",
+        "encoded": "header.i=@mailer.infoq.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "header.i=@sendgrid.info",
+        "encoded": "header.i=@sendgrid.info"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "google.com",
+        "encoded": "google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "167.89.107.173",
+        "encoded": "167.89.107.173"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "zoho.com",
+        "encoded": "zoho.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "209.85.215.48",
+        "encoded": "209.85.215.48"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "9.85.215.48",
+        "encoded": "9.85.215.48"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "envelope-from=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com",
+        "encoded": "envelope-from=akixe.otegi+caf_=akixe.otegi=zoho.com@gmail.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "google.com",
+        "encoded": "google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "167.89.107.173",
+        "encoded": "167.89.107.173"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "mx.google.com",
+        "encoded": "mx.google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "header.i=@mailer.infoq.com",
+        "encoded": "header.i=@mailer.infoq.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "header.i=@sendgrid.info",
+        "encoded": "header.i=@sendgrid.info"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "google.com",
+        "encoded": "google.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "ip",
+        "protocol": "http://",
+        "raw": "167.89.107.173",
+        "encoded": "167.89.107.173"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com",
+        "encoded": "smtp.mailfrom=bounces+4127989-a391-akixe.otegi=gmail.com@mktg.mailer.infoq.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "newsletter@mailer.infoq.com",
+        "encoded": "newsletter@mailer.infoq.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "newsletter@mailer.infoq.com",
+        "encoded": "newsletter@mailer.infoq.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "akixe.otegi@gmail.com",
+        "encoded": "akixe.otegi@gmail.com"
+    },
+    {
+        "reason": "email",
+        "protocol": "mailto:",
+        "raw": "p0ojE9IzT1q9HjCcJWLFUw@ismtpd0023p1mdw1.sendgrid.net",
+        "encoded": "p0ojE9IzT1q9HjCcJWLFUw@ismtpd0023p1mdw1.sendgrid.net"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t43/KQbMVhR9JJ0jpkXH3DPydZiLrSo4sTeRT4Fg3ZoEzNM-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t43/KQbMVhR9JJ0jpkXH3DPydZiLrSo4sTeRT4Fg3ZoEzNM-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t44/KQbMVhR9JJ0jpkXH3DPydSrlU2HfPtzWE1ZNiVTYx1HdnSrURTJe0lM66Vweo8hk1SSCW89hUmllg1nknib1mR5KDz6Pbj67jNthIN0-2FC2-2BBVFoUef-2B5e2l9F8ERFR-2BhnFHJhqQyYHD4JKN6S6HK5-2B8yNPn1RSsLmYm-2Fnr5LF5s-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t44/KQbMVhR9JJ0jpkXH3DPydSrlU2HfPtzWE1ZNiVTYx1HdnSrURTJe0lM66Vweo8hk1SSCW89hUmllg1nknib1mR5KDz6Pbj67jNthIN0-2FC2-2BBVFoUef-2B5e2l9F8ERFR-2BhnFHJhqQyYHD4JKN6S6HK5-2B8yNPn1RSsLmYm-2Fnr5LF5s-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t45/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncEU0Q9uZB4XrZxyFMhIIZMQ1waue4NyJEX0y0-2BwZqEC-2B8B1PaEQv1mM9A29wox9DEwrL0Cc4GskBoUigsERqKwyKgz8D68EwsmPke-2BGEJOTRryyNmTMZ5mVxm94URM2FMrkw5CieUpsS5q4Y4ELcHHW",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t45/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncEU0Q9uZB4XrZxyFMhIIZMQ1waue4NyJEX0y0-2BwZqEC-2B8B1PaEQv1mM9A29wox9DEwrL0Cc4GskBoUigsERqKwyKgz8D68EwsmPke-2BGEJOTRryyNmTMZ5mVxm94URM2FMrkw5CieUpsS5q4Y4ELcHHW"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t46/zE2igK1BNm6HJNtZ2wrAAgkc4qJ1zJVtZnxUrOKVpAmVD9Rlrhf3M4ePzbMY32qCgtfd55LftAoYx4TNiM9jmrkDEtko-2By5MJ0YsR1AvKypDnIFeG7L1qOs91FSd8PV9zbquztIbxE7S90lOmtKrqX-2BD8LubL7vj8IBZ-2B2on0gKUACd6ZFAJTJaWyl1o5hZE",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t46/zE2igK1BNm6HJNtZ2wrAAgkc4qJ1zJVtZnxUrOKVpAmVD9Rlrhf3M4ePzbMY32qCgtfd55LftAoYx4TNiM9jmrkDEtko-2By5MJ0YsR1AvKypDnIFeG7L1qOs91FSd8PV9zbquztIbxE7S90lOmtKrqX-2BD8LubL7vj8IBZ-2B2on0gKUACd6ZFAJTJaWyl1o5hZE"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t47/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGvk0zpoBmQwPMEjtFwY7euBYBbTxyfCvAwFEtOu7tsbwFoffzLtwhz2XlgMk1gYDtnNK9ZiUWBVsSobDvZ-2F-2FYbTrcZskfcc3BNTcNfRJ8tCssrFSERmRkHJN3xlw6uoLs-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t47/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGvk0zpoBmQwPMEjtFwY7euBYBbTxyfCvAwFEtOu7tsbwFoffzLtwhz2XlgMk1gYDtnNK9ZiUWBVsSobDvZ-2F-2FYbTrcZskfcc3BNTcNfRJ8tCssrFSERmRkHJN3xlw6uoLs-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t48/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWxO0iPBtZ57nz05JE293YqHMhztHIgXMH7TdqAeSY9n9dt1o-2BdKQLwkaVctym8v4cLru0eVF8I73cPau4hl-2Bjohr3GPeRsfvpAW7MbZZmtg9aPgKOvXeFoxBYRiW0VMEYtW0N6-2F1prRLikZL29-2FTEdS",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t48/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWxO0iPBtZ57nz05JE293YqHMhztHIgXMH7TdqAeSY9n9dt1o-2BdKQLwkaVctym8v4cLru0eVF8I73cPau4hl-2Bjohr3GPeRsfvpAW7MbZZmtg9aPgKOvXeFoxBYRiW0VMEYtW0N6-2F1prRLikZL29-2FTEdS"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t49/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKIbh8NCXIV-2BPw8klx7nq2FlhP1lAdfwMeU67nMtPe-2F-2F5",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t49/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKIbh8NCXIV-2BPw8klx7nq2FlhP1lAdfwMeU67nMtPe-2F-2F5"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t50/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKF3HJYy53pd1ILQxYviqoTM-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t50/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKF3HJYy53pd1ILQxYviqoTM-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t51/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t51/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8obqoizyw3pePZWa9NwFNyZ0MsqPEwvK4sLimK6dHAJKLZ8-2B3pRgRQddo8pwCXunM8-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t52/zE2igK1BNm6HJNtZ2wrAArBs-2FrW6kwN9kpLiwPnCcEU2GKpkBgnNKJPYGOzN9JJOaZMEEMXxlGBFATZkD2m8F7KhilVRZ3Royoy2VX8HNQZ42VFfijszC9vpffXq7K3ZIDnRZPKt-2FWPxC0JB2R1TpfInFn-2B0zqFx3hbxej-2B3-2F5xF9xq-2F1R3l-2BwsPXpUpYB9D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t52/zE2igK1BNm6HJNtZ2wrAArBs-2FrW6kwN9kpLiwPnCcEU2GKpkBgnNKJPYGOzN9JJOaZMEEMXxlGBFATZkD2m8F7KhilVRZ3Royoy2VX8HNQZ42VFfijszC9vpffXq7K3ZIDnRZPKt-2FWPxC0JB2R1TpfInFn-2B0zqFx3hbxej-2B3-2F5xF9xq-2F1R3l-2BwsPXpUpYB9D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t53/zE2igK1BNm6HJNtZ2wrAAsrtphSjIBiOSDTaur9mcJNjl5ShVL-2Flf0sAd3AabE7vO9fA-2BUPtQsb-2BHLgi5GS-2BNTPul8cGyRa28PKkQIHXKqkPFzvTNQWkSWAJ0Ym8eeUqiwodPiA3ErWRIklE-2Ffeq1PTfn2TI-2B-2FINskTwvSAMedNjGv1ypUPiBl7KnCE7jDyX",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t53/zE2igK1BNm6HJNtZ2wrAAsrtphSjIBiOSDTaur9mcJNjl5ShVL-2Flf0sAd3AabE7vO9fA-2BUPtQsb-2BHLgi5GS-2BNTPul8cGyRa28PKkQIHXKqkPFzvTNQWkSWAJ0Ym8eeUqiwodPiA3ErWRIklE-2Ffeq1PTfn2TI-2B-2FINskTwvSAMedNjGv1ypUPiBl7KnCE7jDyX"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t54/zE2igK1BNm6HJNtZ2wrAAmQbvVI9WL0WqhqAFBRNxR1oJqUumRBNr3nl-2FgJsdm1xhSA-2FdbRoA29B-2FXOQldLyQtP4LaUAlzzcM0zUwoSVLK1HGC09Rq4luWQDl5UFmk8iXphhGsRZl3-2BHJws3T2bwPsPuG4-2FrLtsp-2BMwYAwJ7TY4-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t54/zE2igK1BNm6HJNtZ2wrAAmQbvVI9WL0WqhqAFBRNxR1oJqUumRBNr3nl-2FgJsdm1xhSA-2FdbRoA29B-2FXOQldLyQtP4LaUAlzzcM0zUwoSVLK1HGC09Rq4luWQDl5UFmk8iXphhGsRZl3-2BHJws3T2bwPsPuG4-2FrLtsp-2BMwYAwJ7TY4-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t55/zE2igK1BNm6HJNtZ2wrAAg1UVxFNI2Grlk6fce1SwBCNMqqKuAanzvaLamSJWj74RBqCiCERvNGaqSy8sLxlPuMw-2BHWhx7hIahFrxyHPsvGAgbw0n81dG5JeKzY8jX3ZOrZEPDpQoGA5myorNfN9X0riA2BKZM9wn677wWmuKyTjkmoNere5FzjDbgVup-2B4B",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t55/zE2igK1BNm6HJNtZ2wrAAg1UVxFNI2Grlk6fce1SwBCNMqqKuAanzvaLamSJWj74RBqCiCERvNGaqSy8sLxlPuMw-2BHWhx7hIahFrxyHPsvGAgbw0n81dG5JeKzY8jX3ZOrZEPDpQoGA5myorNfN9X0riA2BKZM9wn677wWmuKyTjkmoNere5FzjDbgVup-2B4B"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t56/zE2igK1BNm6HJNtZ2wrAAscFmlqf3uTxMo5W88mtot-2FIOsTaZI9qrQoBFf1wIBnzIFMTF-2B8Vx30WE9oOCW8SYqzruSc2PxtxpUCjn0QlmftIv-2FUe0sWMk8LBR41F1pN7anp-2Fy1VIk5SQ-2BFoITl7w2MubM96zHxoObTGp50vztwO8glZZes8OOrwWbR1LesXq",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t56/zE2igK1BNm6HJNtZ2wrAAscFmlqf3uTxMo5W88mtot-2FIOsTaZI9qrQoBFf1wIBnzIFMTF-2B8Vx30WE9oOCW8SYqzruSc2PxtxpUCjn0QlmftIv-2FUe0sWMk8LBR41F1pN7anp-2Fy1VIk5SQ-2BFoITl7w2MubM96zHxoObTGp50vztwO8glZZes8OOrwWbR1LesXq"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t57/zE2igK1BNm6HJNtZ2wrAAj3wTaLQmTuf5ohFYTXsdXSaP2PYjquNjfxMqCKaiMj855nO1eOr2sN1C6-2FAOB4D2cexiNQBR3C-2BqeRmxg7DzOScf-2BstbJN2K0YM3uopkFKJATPYdJriXL4sFQqvP3dEJ6zud18R0JRTLf1HUYr8ftkUQb-2FaG2BBHbiVqLxDzrGD",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t57/zE2igK1BNm6HJNtZ2wrAAj3wTaLQmTuf5ohFYTXsdXSaP2PYjquNjfxMqCKaiMj855nO1eOr2sN1C6-2FAOB4D2cexiNQBR3C-2BqeRmxg7DzOScf-2BstbJN2K0YM3uopkFKJATPYdJriXL4sFQqvP3dEJ6zud18R0JRTLf1HUYr8ftkUQb-2FaG2BBHbiVqLxDzrGD"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t58/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t58/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t59/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fs689Fj90i-2F1Qvg-2F2w-2FCfeQ-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t59/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fs689Fj90i-2F1Qvg-2F2w-2FCfeQ-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t60/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t60/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8pP7tKdU00lJ94EguLqL6xmlcObgPHwH-2FGgfvNKA-2F4-2F-2Fv9nQPkKUeUGRO2HWguaP8I-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t61/zE2igK1BNm6HJNtZ2wrAAmsh0vQP-2BjTJ69h33Ah7KgEzZ9aQtL1s6rRVvWfzSOdISDdLmK-2FbAkRKh7oBFGthtNLyUdgtgFk-2FXa3TOR9h2vU0lLpYQ2EYd6bxfSpoeD9YeUvXdh7AZPR5648xZk81B1QCCG-2FV6YoCqqUYKWKLjiMtigSDRbO4gxxcjG9eWWlB",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t61/zE2igK1BNm6HJNtZ2wrAAmsh0vQP-2BjTJ69h33Ah7KgEzZ9aQtL1s6rRVvWfzSOdISDdLmK-2FbAkRKh7oBFGthtNLyUdgtgFk-2FXa3TOR9h2vU0lLpYQ2EYd6bxfSpoeD9YeUvXdh7AZPR5648xZk81B1QCCG-2FV6YoCqqUYKWKLjiMtigSDRbO4gxxcjG9eWWlB"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t62/zE2igK1BNm6HJNtZ2wrAAmPXBrDCLql8gKQF-2Fkj08W6b46QbgNaRPDOSRatP3YVotZn2GRk2U6XMLoECxnSXtEMJSK89fdlj95-2BRave0yDAXFgJnraL52o-2F5gu6XvkXVx1lukp2Djp-2B7Hwy450w1UiFrO0qLGSMWb0-2Fqhx4UoKTIZXEwXQ98r7EWpUD-2B-2FRyi",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t62/zE2igK1BNm6HJNtZ2wrAAmPXBrDCLql8gKQF-2Fkj08W6b46QbgNaRPDOSRatP3YVotZn2GRk2U6XMLoECxnSXtEMJSK89fdlj95-2BRave0yDAXFgJnraL52o-2F5gu6XvkXVx1lukp2Djp-2B7Hwy450w1UiFrO0qLGSMWb0-2Fqhx4UoKTIZXEwXQ98r7EWpUD-2B-2FRyi"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t63/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t63/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t64/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t64/zE2igK1BNm6HJNtZ2wrAAmZhxNYf3R2IPqVMUXEHo-2Bg1ZuPR2pBS9OpOYWhioSMGZ2C-2Bi31UvCz6oH9LnlgkkE7O5H911yAAviNrgm-2BjgAio9-2Bu-2Fp9AAUiCF4DHvW8OpBvm-2FbP4gbut9yev0-2FM5rwEEtchocDtOkkoqLzsJG-2FtGRtwN7EtyBOD2sygek2LuUJV3-2FhAFU4ABvr4sNaXA7rg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t65/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t65/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t66/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t66/zE2igK1BNm6HJNtZ2wrAAq9mfmfM2ZViEcwyc0lA7hawCuRU8TlrlLsZjWfzvzflOoMms4fZzXfWHpWtNwI5hsELgJLby1UyRAwbmY-2F2M-2FqMZFwd9upHKFmDZj-2BP4mhIZA8rikdBLPqwZXxXC6zznb2nXLB9MenEwMYx9ac96zp4wK7rlSJS4yAUAcLVKlF2"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t67/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t67/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t68/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t68/zE2igK1BNm6HJNtZ2wrAAmbf2SpUD3k62l-2Ba8cq9ns2xBxojkyJDoBTU1p-2BLN0ybF2WiFM6hPqXgy6L90bAPgxDPd-2BWiYkRFoMSnsTahlZmk9-2FE0hLIkQU0Qr00TT7GKkb6RgfHkISQVNCYSQmEOIEXzSe9j-2B-2By4J-2FUff31tKN5VU5FfQ1iQrhCe9WC-2FGLpZ89-2FcjxL493nF-2FuqDZx-2FRGg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t69/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t69/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t70/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t70/KQbMVhR9JJ0jpkXH3DPydRIppJJm4-2F1KS9qRpLOx1un20TCGlBR9gpM0NIcf4Rwg-2Bj-2BllR76xqVVdv6fWOZJNG0ot-2FSn0TkFv0c8cPtr7cjcBGw2NYDWJN1HHY3fLxdo0zPjRRf-2BQx-2F1F4DWA0JnOm3v-2B65cjE41rKNtuB2qrhwrShCqaWZBz4EW-2Fr5ECJYu"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t71/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t71/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t72/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoUw8oKIAmZ7oaI3RMKEmdiQ-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t72/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoUw8oKIAmZ7oaI3RMKEmdiQ-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t73/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t73/Ty-2Fr0LRPdm4bkg8BoqLGaprecEjUhwitpDkelVrbw8q6eFrFD9IaNRaZzsspCNTlY8kGeiAnaWFDovSN54rdoaiGAXZDs6YCIaaNYOAecXE-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t74/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t74/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t75/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t75/zE2igK1BNm6HJNtZ2wrAAlpETdidujDVTPp-2BKsgbuWyImhaSPZUKBZzYAtFyroiApgGqwOXDsr9J57EhWVNVNA-2Bp4eRYHq7ztFy-2FNNMMvEGDErtQIKCrye36nnSlvC6iFK5kgnOhSyRQX-2FGS3KgpJQ-2FABtTWFv08upVI-2BnWPMSRszrBWKduaRDZvqMge83Pe"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t76/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t76/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t77/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t77/zE2igK1BNm6HJNtZ2wrAAvO1flF6mzYOxiVQVbZAK85E3NlbIlFKXuqL0YPI-2B7bCdXW2YygQO-2BfcmD4H4cPBQfEX9JvkD4oHnqUCSb2d6Z8Xb-2Fx1qvxI-2BwwTdblaCGe-2BcB5rtTF969mskesDt6ZRjW-2FWaFZLzYlUFfDWqxHXpR-2FGvTuwTdzGZCUGOMe9di-2B7b5eew8b0ZzSI3XC-2BwLKgKg-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t78/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t78/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t79/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t79/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncFgGNzH7II-2BqHXALxhGKLe1Og9VvAZ2PURmm9JbHtluf4s7Fna9vQyNdgSdeSWKRGZawsuNlc9aAJlo1299WkDAW2oiR4X-2BBC6nPd6qrP9lMAeqDglLWZzg-2FsPOqZwuYkRx7pFGUEl0pzLpaVdbkEFXEbE7MiHSvS-2FX8kecwMs34Q-3D-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t80/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t80/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t81/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t81/zE2igK1BNm6HJNtZ2wrAAgMXlnNb5Z-2FavBiEv1p8ncGdOzdW3bgdeC9RFI0TqeH8-2F1sVjo-2F0obrBB-2B8tdYu2iSawkKxQ9QvP7FfahvCID0ut6-2FYT4utmetDeh7Di8DBqbaUpXWf-2Bb-2FBYMQZNc7A0UdjUsT5060APwHBXjjOpTNzvpfZx9lCU2N142yAUHjEP"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t82/9RXDenI7BReTpKa-2F42PXTDOWeEyWhhClNJAmzZbhsDE-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t82/9RXDenI7BReTpKa-2F42PXTDOWeEyWhhClNJAmzZbhsDE-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t83/HE2UYZIDTZxfLuJ8qHDFiClq6xr018yWpDAuUZuvblnJSrazFHJERrfl5bfgtFDh",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t83/HE2UYZIDTZxfLuJ8qHDFiClq6xr018yWpDAuUZuvblnJSrazFHJERrfl5bfgtFDh"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t84/VHbukt9MUWuI8xxF4-2FIRYe4RF7k6aFGEO2IeRH4Yr9jauisJwoAxR5qj1oTsiFLe",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t84/VHbukt9MUWuI8xxF4-2FIRYe4RF7k6aFGEO2IeRH4Yr9jauisJwoAxR5qj1oTsiFLe"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t85/HpF-2FgN2L-2BTd3XbGhi4PFtdLAuFWSkaoSn7SQNBnP71Tjq2TdmpkBgzo6KfHb07PK",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t85/HpF-2FgN2L-2BTd3XbGhi4PFtdLAuFWSkaoSn7SQNBnP71Tjq2TdmpkBgzo6KfHb07PK"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t86/laCycbjzuDwe-2BXNTOL9-2Fdk7OqqunYdv2LZ9YPwX2kV8-3D",
+        "encoded": "links.mailer.infoq.com/mpss/c/HQE/9fw-AA/t.2hk/NBLYFZMPTj6m2gbASPKwYw/t86/laCycbjzuDwe-2BXNTOL9-2Fdk7OqqunYdv2LZ9YPwX2kV8-3D"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://links.mailer.infoq.com/asm/unsubscribe/?user_id=4127989&data=5eEPw96e-9gHvN4ljqxu2uyxa7Q9S_hye2qbOw4sZQBXceRjIU3u4GymSc69vKohzCA3mHoeAxIpAkQa7EPYNdZ_QKT9HhgrzFTDUr1zxYKYsUxENDfW4w4K5J9JW1ln9xXdca8lno6NOHEWplzNHvD6DpbEG0gx2GPFMj6RwJWYM7FIuqEDQ_oUNz644OlEYJw7JWMdT7yQXN24uShgla8aNQ4JqxCzbNf-Abo7wa83LDCLbIushkJaB_-Yy0hJipAYlPjuKyp9nDGxaHF9oYYCq7o-nfIT86qPFvi8C0GSxheaFDn0LBtHQugp9LbQh8NAjpUprnHIxd7j-NJiJHDeQbhPv_DZxtbMz3WPtWRekQ9WkYKqZyFpo1Vi0pHC9W5QRB_a5fIT_Bsk7wk8MgwvaVSRDoJbXlPPxOur41NZvwwgKqbjWTOrt2esTYLBAcNwh8B8DS1jkZVPDk4thOprCiJGLONUD77Y7NEXszPxaGKxussjqxYI_vBwmd1X3CDFx7gTBhUwceKTOOEANPEi4_wbgSvsGK51NMKCoPNy4pGfd01wWqxvoC9xFMU5Qs56nJ2ionzobk4dy16XLFVKFGp72PgXy-MlysUXHBVMpwMp-e5K6H6KBZ28UDnq",
+        "encoded": "links.mailer.infoq.com/asm/unsubscribe/?user_id=4127989&data=5eEPw96e-9gHvN4ljqxu2uyxa7Q9S_hye2qbOw4sZQBXceRjIU3u4GymSc69vKohzCA3mHoeAxIpAkQa7EPYNdZ_QKT9HhgrzFTDUr1zxYKYsUxENDfW4w4K5J9JW1ln9xXdca8lno6NOHEWplzNHvD6DpbEG0gx2GPFMj6RwJWYM7FIuqEDQ_oUNz644OlEYJw7JWMdT7yQXN24uShgla8aNQ4JqxCzbNf-Abo7wa83LDCLbIushkJaB_-Yy0hJipAYlPjuKyp9nDGxaHF9oYYCq7o-nfIT86qPFvi8C0GSxheaFDn0LBtHQugp9LbQh8NAjpUprnHIxd7j-NJiJHDeQbhPv_DZxtbMz3WPtWRekQ9WkYKqZyFpo1Vi0pHC9W5QRB_a5fIT_Bsk7wk8MgwvaVSRDoJbXlPPxOur41NZvwwgKqbjWTOrt2esTYLBAcNwh8B8DS1jkZVPDk4thOprCiJGLONUD77Y7NEXszPxaGKxussjqxYI_vBwmd1X3CDFx7gTBhUwceKTOOEANPEi4_wbgSvsGK51NMKCoPNy4pGfd01wWqxvoC9xFMU5Qs56nJ2ionzobk4dy16XLFVKFGp72PgXy-MlysUXHBVMpwMp-e5K6H6KBZ28UDnq"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "InfoQ.com",
+        "encoded": "InfoQ.com"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://www.w3.org/1999/xhtml",
+        "encoded": "www.w3.org/1999/xhtml"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "http://stylecampaign.com/blog/2015/02/webfont-support-in-email/",
+        "encoded": "stylecampaign.com/blog/2015/02/webfont-support-in-email/"
+    },
+    {
+        "reason": "url",
+        "protocol": "https://",
+        "raw": "https://github.com/TedGoas/Cerberus/issues/89",
+        "encoded": "github.com/TedGoas/Cerberus/issues/89"
+    },
+    {
+        "reason": "url",
+        "protocol": "https://",
+        "raw": "https://www.infoq.com/streaming",
+        "encoded": "www.infoq.com/streaming"
+    },
+    {
+        "reason": "url",
+        "protocol": "http://",
+        "raw": "InfoQ.com",
+        "encoded": "InfoQ.com"
+    }
+]
