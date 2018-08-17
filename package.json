@@ -11,6 +11,12 @@
   "dependencies": {
     "anchorme": "^1.1.2",
     "get-urls": "^7.2.0",
+    "imap": "^0.8.19",
+    "lodash": "^4.17.10",
+    "quoted-printable": "^1.0.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "request-promise-native": "^1.0.5",
     "string_decoder": "^1.1.1",
     "unfluff": "^3.0.1"
   },
