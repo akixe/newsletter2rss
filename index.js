@@ -1,5 +1,6 @@
 var Imap = require("imap");
 var anchorme = require("anchorme").default;
+var _ = require("lodash");
 var fs = require("fs");
 var StringDecoder = require("string_decoder").StringDecoder;
 var quotedPrintable = require("quoted-printable");
@@ -86,24 +87,34 @@ imap.once("end", function() {
                 return console.log(err);
             }
             var urls = anchorme(fileData, { list: true });
+
+            urls = _.filter(urls, function(o) {
+                // string.indexOf(substring) !== -1;
+                return (
+                    o.reason === "url" &&
+                    o.raw.indexOf("hackernewsletter.us1.list-manage") !== -1
+                );
+            });
+            console.log("URLS", urls);
             for (let i = 0; i < urls.length; i++) {
+                console.log("===================================");
                 var url = urls[i];
                 var that = this;
                 that.origurl = url.raw;
+                console.log(that.origurl);
                 /* request
                     .get(url.raw, { timeout: 20000 })
-                    .then(
-                        function(response) {
-                            console.log("original -->> ", origurl);
-                            console.log(response.statusCode); // 200
-                            console.log(
-                                "redirect -->> ",
-                                response.request.uri.href
-                            );
-                        }.bind(that)
-                    )
+                    .then(function(response) {
+                        console.log("original --> ", that.origurl);
+                        console.log(response.statusCode); // 200
+                        console.log("redirect --> ", response.request.uri.href);
+                        console.log("++++++++++++++++++++++");
+                        console.log("");
+                    })
                     .catch(function(err) {
                         console.log("ERR", err);
+                        console.log("---------------");
+                        console.log("");
                     }); */
             }
         });
