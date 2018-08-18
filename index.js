@@ -78,7 +78,9 @@ imap.once("error", function(err) {
 
 imap.once("end", function() {
     console.log("Connection ended");
-    seqnumbers.forEach(function(seqno) {
+    //seqnumbers.forEach(function(seqno) {
+    for (let idx = 0; idx < 1 /*seqnumbers.length*/; idx++) {
+        var seqno = seqnumbers[idx];
         fs.readFile("msg-" + seqno + "-body.txt", "utf8", function(
             err,
             fileData
@@ -97,28 +99,45 @@ imap.once("end", function() {
             });
             console.log("URLS", urls);
             for (let i = 0; i < urls.length; i++) {
-                console.log("===================================");
                 var url = urls[i];
-                var that = this;
-                that.origurl = url.raw;
-                console.log(that.origurl);
-                /* request
-                    .get(url.raw, { timeout: 20000 })
-                    .then(function(response) {
-                        console.log("original --> ", that.origurl);
+                // https://api.pinboard.in/v1/posts/add
+
+                request
+                    .get(urls[i].raw, { timeout: 20000 })
+                    .on("response", function(response) {
+                        console.log("original --> ", urls[i].raw);
                         console.log(response.statusCode); // 200
                         console.log("redirect --> ", response.request.uri.href);
                         console.log("++++++++++++++++++++++");
                         console.log("");
+
+                        request
+                            .get(
+                                "https://api.pinboard.in/v1/posts/add?auth_token=patux:35b4712c3910dc065230",
+                                {
+                                    qs: {
+                                        url: response.request.uri.href,
+                                        description: "TEST-" + Date.now(),
+                                        tag: "TEST"
+                                    }
+                                }
+                            )
+                            .then(function(response) {
+                                console.log("==pinboard OK==", response);
+                            })
+                            .catch(function(err) {
+                                console.error(err);
+                            });
                     })
-                    .catch(function(err) {
-                        console.log("ERR", err);
+                    .on("error", function(err) {
+                        console.log("original --> ", urls[i].raw);
+                        console.log("ERR", err.message);
                         console.log("---------------");
                         console.log("");
-                    }); */
+                    });
             }
         });
-    });
+    }
 });
 
 imap.connect();
