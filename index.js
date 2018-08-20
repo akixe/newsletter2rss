@@ -25,11 +25,11 @@ imap.once("ready", function() {
             [
                 ["FROM", "kale@hackernewsletter.com"],
                 "UNSEEN",
-                ["SENTBEFORE", "Aug 15, 2018"]
+                ["SENTBEFORE", "Aug 19, 2018"]
             ],
             function(err, results) {
                 if (err) throw err;
-                var f = imap.fetch(results, { bodies: "" });
+                var f = imap.fetch(results, { bodies: "", markSeen: true });
                 f.on("message", function(msg, seqno) {
                     seqnumbers.push(seqno);
                     var prefix = "(#" + seqno + ") ";
@@ -99,45 +99,83 @@ imap.once("end", function() {
             });
             console.log("URLS", urls);
             for (let i = 0; i < urls.length; i++) {
-                var url = urls[i];
-                // https://api.pinboard.in/v1/posts/add
-
-                request
+                getRedirectedLink(urls[i].raw).then(function(redirectedLink) {
+                    if (
+                        redirectedLink.indexOf("news.ycombinator.com/item") !==
+                        -1
+                    )
+                        return console.log("---- not a link. next");
+                    request
+                        .get(
+                            "https://api.pinboard.in/v1/posts/add?auth_token=patux:35b4712c3910dc065230",
+                            {
+                                qs: {
+                                    url: redirectedLink,
+                                    description: "TEST-" + Date.now(),
+                                    tags: "TEST"
+                                }
+                            }
+                        )
+                        .then(function(response) {
+                            console.log("==pinboard OK==", response);
+                        })
+                        .catch(function(err) {
+                            console.error("== pinboard KO!! ==", err);
+                        });
+                });
+                /* request
                     .get(urls[i].raw, { timeout: 20000 })
                     .on("response", function(response) {
                         console.log("original --> ", urls[i].raw);
                         console.log(response.statusCode); // 200
+                        console.log(
+                            " --- REDIR -- ",
+                            response.request.uri.href
+                        );
+                        if (
+                            response.request.uri.href.indexOf(
+                                "news.ycombinator.com/item"
+                            ) !== -1
+                        )
+                            return console.log("---- not a link. next");
                         console.log("redirect --> ", response.request.uri.href);
                         console.log("++++++++++++++++++++++");
                         console.log("");
-
-                        request
-                            .get(
-                                "https://api.pinboard.in/v1/posts/add?auth_token=patux:35b4712c3910dc065230",
-                                {
-                                    qs: {
-                                        url: response.request.uri.href,
-                                        description: "TEST-" + Date.now(),
-                                        tag: "TEST"
-                                    }
-                                }
-                            )
-                            .then(function(response) {
-                                console.log("==pinboard OK==", response);
-                            })
-                            .catch(function(err) {
-                                console.error(err);
-                            });
                     })
                     .on("error", function(err) {
                         console.log("original --> ", urls[i].raw);
                         console.log("ERR", err.message);
                         console.log("---------------");
                         console.log("");
-                    });
+                    }); */
             }
         });
     }
 });
 
 imap.connect();
+
+function getRedirectedLink(sourceLink) {
+    return new Promise((resolve, reject) => {
+        request
+            .get(sourceLink, { timeout: 20000 })
+            .on("response", function(response) {
+                console.log("---------------");
+                console.log("[OK]");
+                console.log("original --> ", sourceLink);
+                console.log(response.statusCode); // 200
+                console.log("redirect --> ", response.request.uri.href);
+                console.log("---------------");
+                console.log("");
+                return resolve(response.request.uri.href);
+            })
+            .on("error", function(err) {
+                console.log("---------------");
+                console.log("[-] ERR", err.message);
+                console.log("original --> ", sourceLink);
+                console.log("---------------");
+                console.log("");
+                return reject(err);
+            });
+    });
+}
