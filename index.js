@@ -39,7 +39,7 @@ imap.once("error", function(err) {
     console.log(err);
 });
 
-imap.once("end", function() {
+imap.once("-end", function() {
     console.log("Connection ended");
     //seqnumbers.forEach(function(seqno) {
     for (let idx = 0; idx < 1 /*seqnumbers.length*/; idx++) {
@@ -119,9 +119,8 @@ function onFetcherGetsMessage(msg, seqno) {
 
         stream.once("end", function() {
             buffer = quotedPrintable.decode(buffer);
-            fs.writeFile("msg-" + seqno + "-body.txt", buffer, function(err) {
-                if (err) return console.log(err);
-            });
+            var urls = anchorme(buffer, { list: true });
+            console.log("URLS", urls);
         });
     });
 
