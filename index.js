@@ -27,44 +27,10 @@ imap.once("ready", function() {
             results
         ) {
             if (err) throw err;
-            var f = imap.fetch(results, { bodies: "", markSeen: true });
-            f.on("message", function(msg, seqno) {
-                seqnumbers.push(seqno);
-                var prefix = "(#" + seqno + ") ";
-
-                msg.on("body", function(stream, info) {
-                    var buffer = "";
-                    var count = 0;
-                    var decoder = new StringDecoder("utf8");
-                    stream.on("data", function(chunk) {
-                        count += chunk.length;
-                        buffer += decoder.write(chunk);
-                    });
-
-                    stream.once("end", function() {
-                        buffer = quotedPrintable.decode(buffer);
-                        // console.log(buffer);
-                        fs.writeFile(
-                            "msg-" + seqno + "-body.txt",
-                            buffer,
-                            function(err) {
-                                if (err) return console.log(err);
-                            }
-                        );
-                    });
-                });
-
-                msg.once("end", function() {
-                    console.log(prefix + "Finished");
-                });
-            });
-            f.once("error", function(err) {
-                console.log("Fetch error: " + err);
-            });
-            f.once("end", function() {
-                console.log("Done fetching all messages!");
-                imap.end();
-            });
+            var fetcher = imap.fetch(results, { bodies: "", markSeen: true });
+            fetcher.on("message", onFetcherGetsMessage);
+            fetcher.once("error", onFetcherError);
+            fetcher.once("end", onFetcherEnd);
         });
     });
 });
@@ -137,6 +103,41 @@ imap.once("end", function() {
 });
 
 imap.connect();
+
+function onFetcherGetsMessage(msg, seqno) {
+    seqnumbers.push(seqno);
+    var prefix = "(#" + seqno + ") ";
+
+    msg.on("body", function(stream, info) {
+        var buffer = "";
+        var count = 0;
+        var decoder = new StringDecoder("utf8");
+        stream.on("data", function(chunk) {
+            count += chunk.length;
+            buffer += decoder.write(chunk);
+        });
+
+        stream.once("end", function() {
+            buffer = quotedPrintable.decode(buffer);
+            fs.writeFile("msg-" + seqno + "-body.txt", buffer, function(err) {
+                if (err) return console.log(err);
+            });
+        });
+    });
+
+    msg.once("end", function() {
+        console.log(prefix + "Finished");
+    });
+}
+
+function onFetcherError(err) {
+    console.log("Fetch error: " + err);
+}
+
+function onFetcherEnd() {
+    console.log("Done fetching all messages!");
+    imap.end();
+}
 
 function getRedirectedLink(sourceLink) {
     return new Promise((resolve, reject) => {
