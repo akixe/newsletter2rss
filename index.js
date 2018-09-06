@@ -13,62 +13,59 @@ var imap = new Imap({
     tls: true
 });
 var request = require("request-promise");
+var getTitleAtUrl = require("get-title-at-url");
 
 function openInbox(cb) {
-    imap.openBox("INBOX", true, cb);
+    imap.openBox("INBOX", false, cb);
 }
 
 imap.once("ready", function() {
     openInbox(function(err, box) {
         if (err) throw err;
-        imap.search(
-            [
-                ["FROM", "kale@hackernewsletter.com"],
-                "UNSEEN",
-                ["SENTBEFORE", "Aug 19, 2018"]
-            ],
-            function(err, results) {
-                if (err) throw err;
-                var f = imap.fetch(results, { bodies: "", markSeen: true });
-                f.on("message", function(msg, seqno) {
-                    seqnumbers.push(seqno);
-                    var prefix = "(#" + seqno + ") ";
+        imap.search([["FROM", "kale@hackernewsletter.com"], "UNSEEN"], function(
+            err,
+            results
+        ) {
+            if (err) throw err;
+            var f = imap.fetch(results, { bodies: "", markSeen: true });
+            f.on("message", function(msg, seqno) {
+                seqnumbers.push(seqno);
+                var prefix = "(#" + seqno + ") ";
 
-                    msg.on("body", function(stream, info) {
-                        var buffer = "";
-                        var count = 0;
-                        var decoder = new StringDecoder("utf8");
-                        stream.on("data", function(chunk) {
-                            count += chunk.length;
-                            buffer += decoder.write(chunk);
-                        });
-
-                        stream.once("end", function() {
-                            buffer = quotedPrintable.decode(buffer);
-                            // console.log(buffer);
-                            fs.writeFile(
-                                "msg-" + seqno + "-body.txt",
-                                buffer,
-                                function(err) {
-                                    if (err) return console.log(err);
-                                }
-                            );
-                        });
+                msg.on("body", function(stream, info) {
+                    var buffer = "";
+                    var count = 0;
+                    var decoder = new StringDecoder("utf8");
+                    stream.on("data", function(chunk) {
+                        count += chunk.length;
+                        buffer += decoder.write(chunk);
                     });
 
-                    msg.once("end", function() {
-                        console.log(prefix + "Finished");
+                    stream.once("end", function() {
+                        buffer = quotedPrintable.decode(buffer);
+                        // console.log(buffer);
+                        fs.writeFile(
+                            "msg-" + seqno + "-body.txt",
+                            buffer,
+                            function(err) {
+                                if (err) return console.log(err);
+                            }
+                        );
                     });
                 });
-                f.once("error", function(err) {
-                    console.log("Fetch error: " + err);
+
+                msg.once("end", function() {
+                    console.log(prefix + "Finished");
                 });
-                f.once("end", function() {
-                    console.log("Done fetching all messages!");
-                    imap.end();
-                });
-            }
-        );
+            });
+            f.once("error", function(err) {
+                console.log("Fetch error: " + err);
+            });
+            f.once("end", function() {
+                console.log("Done fetching all messages!");
+                imap.end();
+            });
+        });
     });
 });
 
@@ -105,49 +102,35 @@ imap.once("end", function() {
                         -1
                     )
                         return console.log("---- not a link. next");
-                    request
-                        .get(
-                            "https://api.pinboard.in/v1/posts/add?auth_token=patux:35b4712c3910dc065230",
-                            {
+                    getTitleAtUrl(redirectedLink, function(title) {
+                        console.log(title);
+                        var username = "de.acqs@gmail.com",
+                            password = "W1Cle8WE",
+                            auth =
+                                "Basic " +
+                                new Buffer(username + ":" + password).toString(
+                                    "base64"
+                                );
+
+                        request
+                            .get("https://www.instapaper.com/api/add", {
                                 qs: {
-                                    url: redirectedLink,
-                                    description: "TEST-" + Date.now(),
-                                    tags: "TEST"
+                                    url: redirectedLink
+                                },
+                                headers: {
+                                    Host: "www.instapaper.com",
+                                    Authorization:
+                                        "Basic ZGUuYWNxc0BnbWFpbC5jb206VzFDbGU4V0U="
                                 }
-                            }
-                        )
-                        .then(function(response) {
-                            console.log("==pinboard OK==", response);
-                        })
-                        .catch(function(err) {
-                            console.error("== pinboard KO!! ==", err);
-                        });
+                            })
+                            .then(function(response) {
+                                console.log("==instapaper OK==", response);
+                            })
+                            .catch(function(err) {
+                                // console.error("== instapaper KO!! ==", err);
+                            });
+                    });
                 });
-                /* request
-                    .get(urls[i].raw, { timeout: 20000 })
-                    .on("response", function(response) {
-                        console.log("original --> ", urls[i].raw);
-                        console.log(response.statusCode); // 200
-                        console.log(
-                            " --- REDIR -- ",
-                            response.request.uri.href
-                        );
-                        if (
-                            response.request.uri.href.indexOf(
-                                "news.ycombinator.com/item"
-                            ) !== -1
-                        )
-                            return console.log("---- not a link. next");
-                        console.log("redirect --> ", response.request.uri.href);
-                        console.log("++++++++++++++++++++++");
-                        console.log("");
-                    })
-                    .on("error", function(err) {
-                        console.log("original --> ", urls[i].raw);
-                        console.log("ERR", err.message);
-                        console.log("---------------");
-                        console.log("");
-                    }); */
             }
         });
     }
